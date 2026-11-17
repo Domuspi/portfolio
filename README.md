@@ -9,8 +9,9 @@ Single self-contained `index.html` (no build step, no frameworks). Dark "Enginee
 ## What's inside
 - **Labs Aero** ecosystem: Miles Terminal, Capturador Smiles (SaaS), Capturador Azul, Transcrevedor de Documentos
 - CSS-rendered product mockups for the Chrome extensions and n8n flows
+- **Domus** ecosystem: a production dashboard for a miles agency plus 13 surrounding projects (14 private repos, 8,278 commits, Aug to Nov 2026)
 - 15+ shipped projects (tools, extensions, client sites, bots, apps)
-- **By the numbers**: live commit data aggregated from 11 GitHub repos (789 commits, Mar–Jun 2026), languages, and the MCPs/skills used to build everything
+- **By the numbers**: commit data aggregated from 25 GitHub repos (9,067 commits, Mar to Nov 2026), languages, and the MCPs/skills used to build everything
 
 ## Stack used across projects
 Claude (Anthropic) · Claude Vision · DeepSeek · n8n · Playwright · Puppeteer · Supabase · Stripe · Docker Swarm · Hostinger · OCR.space · Tesseract · WAHA · Node.js · Python · React
