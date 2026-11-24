@@ -117,6 +117,9 @@
   .feat{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
   @media(max-width:900px){ .feat{ grid-template-columns:1fr 1fr; } }
   @media(max-width:640px){ .feat{ grid-template-columns:1fr; } }
+  .feat.four{ grid-template-columns:repeat(2,1fr); margin-bottom:22px; }
+  @media(max-width:640px){ .feat.four{ grid-template-columns:1fr; } }
+  .card-media.dark{ background:#0B1118; }
   .card{ background:var(--surface); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; display:flex; flex-direction:column; transition:transform var(--t), box-shadow var(--t), border-color var(--t); box-shadow:var(--shadow); }
   .card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-lg); border-color:var(--line-2); }
   .card-media{ aspect-ratio:16/10; background:var(--bg-2); border-bottom:1px solid var(--line); overflow:hidden; }
@@ -199,6 +202,7 @@
     <a href="#top" class="brand"><span class="mark">GB</span><span>Gabriel Belcastro</span><span class="avail" title="Disponível para trabalho remoto"></span></a>
     <div class="nav-center">
       <a href="#work" class="nav-link" data-sec="work" data-pt="Projetos">Projects</a>
+      <a href="#domus" class="nav-link" data-sec="domus">Domus</a>
       <a href="#about" class="nav-link" data-sec="about" data-pt="Sobre">About</a>
       <a href="#numbers" class="nav-link" data-sec="numbers" data-pt="Números">Numbers</a>
     </div>
@@ -212,6 +216,7 @@
   </div>
   <div id="mobileMenu">
     <a href="#work" class="m-link" data-pt="Projetos">Projects</a>
+    <a href="#domus" class="m-link">Domus</a>
     <a href="#about" class="m-link" data-pt="Sobre">About</a>
     <a href="#numbers" class="m-link" data-pt="Números">Numbers</a>
     <div class="m-foot">
@@ -303,6 +308,57 @@
         <p data-pt="Painel em produção que concentra o saldo real de milhas de cada conta, o custo de cada API e o estado dos agentes que rodam sozinhos todo dia. Em volta dele, 13 projetos: leitura de saldo e extrato nos programas de fidelidade, conciliação de emissões, aviso de no-show, cadastro automático em promoções, extensão para a equipe de emissores e bots de WhatsApp. Construí sozinho, com Claude, em três meses e meio.">A production dashboard holding the real miles balance of every account, the cost of every API and the state of the agents that run unattended every day. Around it, 13 projects: balance and statement reading across loyalty programs, ticket reconciliation, no-show alerts, automatic promo enrollment, a Chrome extension for the ticketing team and WhatsApp bots. Built solo, with Claude, in three and a half months.</p>
       </div>
     </div>
+    <div class="feat four">
+
+      <!-- Central de atendimento -->
+      <a class="card reveal" href="https://domuspi.com.br/central-de-atendimento.html" target="_blank" rel="noopener">
+        <div class="card-media dark"><img src="screenshots/domus-central.jpg" alt="Central de atendimento Domus" loading="lazy" /></div>
+        <div class="card-body">
+          <div class="pill-row"><span class="pill live-pill"><span class="dot"></span><span data-pt="No ar">Live</span></span><span class="pill" data-pt="Agente de voz">Voice agent</span></div>
+          <h3><span data-pt="Central de atendimento">Call center</span> <span class="accent">↗</span></h3>
+          <p class="desc" data-pt="Uma assistente de voz com IA liga para a central da companhia aérea e pede a devolução da taxa de embarque de um no-show, até o protocolo. A equipe acompanha cada ligação ao vivo, com áudio e transcrição.">An AI voice assistant calls the airline's call center and requests the boarding-fee refund for a no-show, all the way to the protocol number. The team follows every call live, with audio and transcript.</p>
+          <div class="tags"><span class="tag" data-pt="Voz com IA">AI voice</span><span class="tag" data-pt="Telefonia">Telephony</span><span class="tag" data-pt="Transcrição ao vivo">Live transcript</span></div>
+          <div class="card-foot"><span class="card-link" data-pt="Ouvir uma ligação">Listen to a call</span></div>
+        </div>
+      </a>
+
+      <!-- Site / Serviços -->
+      <a class="card reveal" href="https://domuspi.com.br/servicos.html" target="_blank" rel="noopener">
+        <div class="card-media dark"><img src="screenshots/domus-servicos.jpg" alt="Site de serviços da Domus" loading="lazy" /></div>
+        <div class="card-body">
+          <div class="pill-row"><span class="pill live-pill"><span class="dot"></span><span data-pt="No ar">Live</span></span><span class="pill">Site</span></div>
+          <h3><span data-pt="Site da Domus">Domus website</span> <span class="accent">↗</span></h3>
+          <p class="desc" data-pt="A página que oferece a outras agências os robôs que rodam todo dia na operação da Domus: promoções, pontos parados, conciliação de emissões e no-show, com resultados medidos.">The page that offers other agencies the robots that run every day in Domus's own operation: promotions, idle points, ticket reconciliation and no-shows, with measured results.</p>
+          <div class="tags"><span class="tag" data-pt="Produto">Product</span><span class="tag" data-pt="Vendas">Sales</span><span class="tag">domuspi.com.br</span></div>
+          <div class="card-foot"><span class="card-link" data-pt="Ver o site">See the website</span></div>
+        </div>
+      </a>
+
+      <!-- Painel em demonstração -->
+      <a class="card reveal" href="https://domuspi.com.br/demonstracao.html" target="_blank" rel="noopener">
+        <div class="card-media dark"><img src="screenshots/domus-painel.jpg" alt="Painel Domus em demonstração" loading="lazy" /></div>
+        <div class="card-body">
+          <div class="pill-row"><span class="pill live-pill"><span class="dot"></span><span data-pt="Demonstração aberta">Open demo</span></span><span class="pill">Dashboard</span></div>
+          <h3><span data-pt="Painel Domus">Domus dashboard</span> <span class="accent">↗</span></h3>
+          <p class="desc" data-pt="O painel de produção, aberto para navegar com dados fictícios: saldo de milhas por conta, rodadas dos agentes, no-show, conciliação, custo de cada API e o estado da máquina.">The production dashboard, open to browse with fictitious data: miles balance per account, agent runs, no-shows, reconciliation, the cost of every API and the server's health.</p>
+          <div class="tags"><span class="tag" data-pt="Agentes">Agents</span><span class="tag" data-pt="Dados">Data</span><span class="tag" data-pt="Custos">Costs</span></div>
+          <div class="card-foot"><span class="card-link" data-pt="Abrir a demonstração">Open the demo</span></div>
+        </div>
+      </a>
+
+      <!-- Capturador Azul -->
+      <a class="card reveal" href="capturador-azul.html">
+        <div class="card-media"><img src="screenshots/capturador-azul-card.jpg" alt="Capturador Azul — Equipe" loading="lazy" /></div>
+        <div class="card-body">
+          <div class="pill-row"><span class="pill live-pill"><span class="dot"></span><span data-pt="Em uso pela equipe">Used by the team</span></span><span class="pill" data-pt="Extensão Chrome">Chrome extension</span></div>
+          <h3>Capturador Azul <span class="accent">→</span></h3>
+          <p class="desc" data-pt="A extensão dos emissores da Domus no site da Azul: mostra as contas do grupo de cada pessoa, registra pontos e taxas de cada busca e calcula o preço por trecho e o de Pontos + Dinheiro. Senha e cartão nunca chegam a ela.">The ticketing team's extension on the Azul website: it shows each person's account group, records points and fees from every search and prices each leg and the Points + Cash fare. Passwords and cards never reach it.</p>
+          <div class="tags"><span class="tag" data-pt="Extensão">Extension</span><span class="tag" data-pt="Acesso por pessoa">Per-person access</span><span class="tag" data-pt="Segurança">Security</span></div>
+          <div class="card-foot"><span class="card-link" data-pt="Ver a apresentação">See the overview</span></div>
+        </div>
+      </a>
+
+    </div>
     <div class="bigstat reveal">
       <div class="bcell"><div class="num count" data-target="8278">0</div><div class="lbl" data-pt="Commits">Commits</div></div>
       <div class="bcell"><div class="num count" data-target="14">0</div><div class="lbl" data-pt="Repositórios">Repositories</div></div>
@@ -340,10 +396,10 @@
         <div><h4>WhatsApp Milhas</h4><p data-pt="Lê fotos de bilhetes no WhatsApp com IA e organiza tudo numa planilha.">Reads ticket photos on WhatsApp with AI and organizes everything in a sheet.</p><div class="meta" data-pt="Bot · Em produção">Bot · In production</div></div>
       </div>
 
-      <div class="row reveal">
+      <a class="row reveal" href="capturador-azul.html">
         <div class="ic sky"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M10 3v3a2 2 0 1 0 4 0V3h4v4h-3a2 2 0 1 0 0 4h3v4h-4v-3a2 2 0 1 0-4 0v3H6v-4h3a2 2 0 1 0 0-4H6V3z"/></svg></div>
-        <div><h4>Capturador Azul</h4><p data-pt="A mesma ideia do Capturador Smiles, feita para a TudoAzul.">The same idea as Capturador Smiles, built for TudoAzul.</p><div class="meta" data-pt="Extensão">Extension</div></div>
-      </div>
+        <div><h4>Capturador Azul <span class="accent">→</span></h4><p data-pt="A mesma ideia do Capturador Smiles, feita para a Azul. Hoje é a extensão da equipe de emissores da Domus.">The same idea as Capturador Smiles, built for Azul. Today it is the Domus ticketing team's extension.</p><div class="meta" data-pt="Extensão">Extension</div></div>
+      </a>
 
       <div class="row reveal">
         <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></div>
@@ -470,7 +526,7 @@
     // active section link
     var links=document.querySelectorAll('.nav-link');
     var sio=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ links.forEach(function(l){ l.classList.toggle('active', l.dataset.sec===e.target.id); }); } }); },{threshold:.4});
-    ['work','about','numbers'].forEach(function(id){ var s=document.getElementById(id); if(s) sio.observe(s); });
+    ['work','domus','about','numbers'].forEach(function(id){ var s=document.getElementById(id); if(s) sio.observe(s); });
 
     // reveal
     var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); },{threshold:.12, rootMargin:'0px 0px -40px 0px'});
