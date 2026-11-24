@@ -3,192 +3,280 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Gabriel Belcastro · IA & Automação</title>
-<meta name="description" content="Gabriel Belcastro · construtor de sistemas de IA e automação. Fundador da Labs Aero. Portfólio de projetos." />
+<title>Gabriel Belcastro · IA de voz e automação</title>
+<meta name="description" content="Gabriel Belcastro constrói IA de voz para atendimento, agentes e automações em uso. Ouça a ligação da Clara, assistente de voz da Domus, e veja os projetos." />
 <link rel="canonical" href="https://portfolio.labsaero.com/" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2315171C'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='14' font-weight='700' fill='white' text-anchor='middle'%3EGB%3C/text%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23121316'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='14' font-weight='700' fill='white' text-anchor='middle'%3EGB%3C/text%3E%3C/svg%3E" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://portfolio.labsaero.com/" />
-<meta property="og:title" content="Gabriel Belcastro · Construtor de IA" />
-<meta property="og:description" content="Fui emissor de passagens. Hoje construo IA que faz o trabalho. Fundador da Labs Aero." />
+<meta property="og:title" content="Gabriel Belcastro · IA de voz e automação" />
+<meta property="og:description" content="Assistente de voz que liga para a central da companhia aérea, agentes que rodam sozinhos todo dia e extensões usadas pela equipe." />
 <meta property="og:image" content="https://portfolio.labsaero.com/og.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Gabriel Belcastro · Construtor de IA" />
-<meta name="twitter:description" content="Fui emissor de passagens. Hoje construo IA que faz o trabalho." />
+<meta name="twitter:title" content="Gabriel Belcastro · IA de voz e automação" />
+<meta name="twitter:description" content="Assistente de voz que liga para a central da companhia aérea, agentes que rodam sozinhos todo dia e extensões usadas pela equipe." />
 <meta name="twitter:image" content="https://portfolio.labsaero.com/og.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --bg:#FFFFFF;
-    --bg-2:#F6F7F9;
-    --surface:#FFFFFF;
-    --ink:#15171C;
-    --text:#3C424C;
-    --muted:#767D89;
-    --faint:#9AA1AC;
-    --line:#E8EAEF;
-    --line-2:#DDE0E7;
-    --accent:#2C53F0;
-    --accent-700:#1E40D8;
-    --accent-soft:#EEF2FF;
-    --success:#0E9F6E;
-    --success-soft:#E6F6EF;
-    --azul:#00A1E0;
-    --r:16px;
-    --r-sm:10px;
-    --shadow:0 1px 2px rgba(16,24,40,.04), 0 8px 24px rgba(16,24,40,.05);
-    --shadow-lg:0 2px 4px rgba(16,24,40,.05), 0 18px 40px rgba(16,24,40,.10);
+    --paper:#F7F5F0;
+    --paper-2:#EFEBE2;
+    --card:#FFFFFF;
+    --ink:#121316;
+    --text:#383B42;
+    --muted:#6B6F78;
+    --faint:#9A9DA4;
+    --line:#E2DED4;
+    --line-2:#D3CEC2;
+    --accent:#C23B12;
+    --accent-ink:#A8320F;
+    --accent-soft:#FBE9E1;
+    --signal:#FF6A2B;
+    --live:#13865A;
+    --live-soft:#E2F3EA;
+    --night:#101217;
+    --night-2:#181B22;
+    --night-line:#2A2E37;
+    --night-text:#C9CCD3;
+    --night-muted:#8A8F99;
+    --r:18px;
+    --r-sm:11px;
+    --shadow:0 1px 2px rgba(18,19,22,.05), 0 10px 30px rgba(18,19,22,.06);
+    --shadow-lg:0 2px 4px rgba(18,19,22,.06), 0 22px 48px rgba(18,19,22,.12);
     --t:.22s cubic-bezier(.4,0,.2,1);
-    --maxw:1120px;
+    --maxw:1140px;
+    --display:"Bricolage Grotesque", "Instrument Sans", system-ui, sans-serif;
+    --body:"Instrument Sans", system-ui, sans-serif;
+    --mono:"Geist Mono", ui-monospace, monospace;
   }
   *{ box-sizing:border-box; margin:0; padding:0; }
-  html{ scroll-behavior:smooth; }
-  body{ font-family:"Inter",system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; -webkit-font-smoothing:antialiased; }
-  .mono{ font-family:"Geist Mono",ui-monospace,monospace; }
+  html{ scroll-behavior:smooth; scroll-padding-top:76px; }
+  body{ font-family:var(--body); background:var(--paper); color:var(--text); line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
   a{ color:inherit; text-decoration:none; }
   img{ display:block; max-width:100%; }
+  button{ font-family:inherit; }
   .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 24px; }
-  .sec{ padding:84px 0; }
-  @media(max-width:640px){ .sec{ padding:56px 0; } }
-
-  h1,h2,h3{ color:var(--ink); line-height:1.15; letter-spacing:-.02em; font-weight:700; }
-  .eyebrow{ font-size:12px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
-  .accent{ color:var(--accent); }
+  @media(max-width:520px){ .wrap{ padding:0 16px; } }
+  .sec{ padding:96px 0; }
+  @media(max-width:640px){ .sec{ padding:64px 0; } }
+  h1,h2,h3,h4{ color:var(--ink); font-family:var(--display); line-height:1.08; letter-spacing:-.025em; font-weight:700; }
+  .eyebrow{ font-family:var(--mono); font-size:12px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); }
+  .mono{ font-family:var(--mono); }
+  :focus-visible{ outline:2px solid var(--accent); outline-offset:3px; border-radius:6px; }
 
   /* NAV */
-  nav{ position:sticky; top:0; z-index:50; background:rgba(255,255,255,.72); backdrop-filter:saturate(180%) blur(14px); border-bottom:1px solid var(--line); transition:box-shadow var(--t), background var(--t); }
-  nav.scrolled{ background:rgba(255,255,255,.88); box-shadow:0 8px 28px rgba(16,24,40,.07); }
-  .nav-in{ display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:16px; height:66px; }
-  .brand{ justify-self:start; display:flex; align-items:center; gap:11px; font-weight:700; font-size:15px; color:var(--ink); letter-spacing:-.01em; }
-  .brand .mark{ width:32px; height:32px; border-radius:9px; background:var(--ink); color:#fff; display:grid; place-items:center; font-size:12.5px; font-weight:700; }
-  .brand .avail{ width:7px; height:7px; border-radius:50%; background:var(--success); box-shadow:0 0 0 3px var(--success-soft); }
-  .nav-center{ justify-self:center; display:flex; align-items:center; gap:2px; }
-  .nav-center a{ font-size:14px; font-weight:500; color:var(--text); padding:8px 14px; border-radius:9px; transition:color var(--t), background var(--t); }
-  .nav-center a:hover{ color:var(--ink); background:var(--bg-2); }
+  nav{ position:sticky; top:0; z-index:50; background:rgba(247,245,240,.8); backdrop-filter:saturate(160%) blur(14px); -webkit-backdrop-filter:saturate(160%) blur(14px); border-bottom:1px solid transparent; transition:border-color var(--t), background var(--t); }
+  nav.scrolled{ border-bottom-color:var(--line); background:rgba(247,245,240,.92); }
+  .nav-in{ display:flex; align-items:center; justify-content:space-between; gap:16px; height:66px; }
+  .brand{ display:flex; align-items:center; gap:11px; color:var(--ink); }
+  .brand .mark{ width:34px; height:34px; border-radius:10px; background:var(--ink); color:#fff; display:grid; place-items:center; font-family:var(--display); font-size:13px; font-weight:700; letter-spacing:0; }
+  .brand .who{ display:flex; flex-direction:column; line-height:1.15; }
+  .brand .name{ font-weight:700; font-size:15px; letter-spacing:-.01em; }
+  .brand .role{ font-size:12px; color:var(--muted); }
+  .nav-center{ display:flex; align-items:center; gap:2px; }
+  .nav-center a{ font-size:14px; font-weight:500; color:var(--text); padding:8px 13px; border-radius:9px; transition:color var(--t), background var(--t); }
+  .nav-center a:hover{ color:var(--ink); background:var(--paper-2); }
   .nav-center a.active{ color:var(--accent); }
-  .nav-actions{ justify-self:end; display:flex; align-items:center; gap:12px; }
-  .lang-btn{ display:inline-flex; gap:5px; align-items:center; font-size:12.5px; font-weight:600; background:var(--bg-2); border:1px solid var(--line); border-radius:999px; padding:6px 11px; cursor:pointer; font-family:inherit; transition:border-color var(--t); }
-  .lang-btn:hover{ border-color:var(--line-2); }
-  .lang-btn .l-en{ color:var(--accent); } .lang-btn .l-pt{ color:var(--faint); } .lang-btn .sep{ color:var(--faint); }
-  .btn{ display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600; border-radius:10px; padding:10px 18px; cursor:pointer; transition:all var(--t); border:1px solid transparent; font-family:inherit; }
-  .btn-sm{ padding:8px 16px; font-size:13.5px; }
-  .btn-solid{ background:var(--accent); color:#fff; box-shadow:0 1px 2px rgba(44,83,240,.25); }
-  .btn-solid:hover{ background:var(--accent-700); transform:translateY(-1px); }
-  .btn-ghost{ background:var(--surface); color:var(--ink); border-color:var(--line-2); }
+  .nav-actions{ display:flex; align-items:center; gap:10px; }
+  .lang-btn{ display:inline-flex; gap:5px; align-items:center; font-family:var(--mono); font-size:12px; font-weight:500; background:transparent; border:1px solid var(--line-2); border-radius:999px; padding:6px 11px; cursor:pointer; transition:border-color var(--t); color:var(--faint); }
+  .lang-btn:hover{ border-color:var(--ink); }
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:9px; font-size:14.5px; font-weight:600; border-radius:11px; padding:11px 19px; cursor:pointer; transition:background var(--t), border-color var(--t), transform var(--t), color var(--t); border:1px solid transparent; line-height:1.2; }
+  .btn-sm{ padding:8px 15px; font-size:13.5px; }
+  .btn-solid{ background:var(--ink); color:#fff; }
+  .btn-solid:hover{ background:#000; transform:translateY(-1px); }
+  .btn-accent{ background:var(--accent); color:#fff; }
+  .btn-accent:hover{ background:var(--accent-ink); transform:translateY(-1px); }
+  .btn-ghost{ background:var(--card); color:var(--ink); border-color:var(--line-2); }
   .btn-ghost:hover{ border-color:var(--ink); }
-  .menu-btn{ display:none; justify-self:end; background:none; border:1px solid var(--line-2); border-radius:9px; padding:8px; cursor:pointer; color:var(--ink); }
+  .btn svg{ flex:0 0 auto; }
+  .menu-btn{ display:none; background:none; border:1px solid var(--line-2); border-radius:10px; padding:8px; cursor:pointer; color:var(--ink); }
   .menu-btn svg{ display:block; }
-  #mobileMenu{ display:none; flex-direction:column; gap:2px; padding:10px 24px 18px; border-bottom:1px solid var(--line); background:var(--bg); }
-  #mobileMenu a.m-link{ padding:12px 0; font-weight:500; border-bottom:1px solid var(--line); }
+  #mobileMenu{ display:none; flex-direction:column; padding:6px 16px 18px; border-bottom:1px solid var(--line); background:var(--paper); }
+  #mobileMenu a.m-link{ padding:13px 0; font-weight:500; border-bottom:1px solid var(--line); color:var(--ink); }
   .m-foot{ display:flex; align-items:center; gap:12px; margin-top:14px; }
-  @media(max-width:820px){ .nav-in{ grid-template-columns:1fr auto; } .nav-center,.nav-actions{ display:none; } .menu-btn{ display:inline-flex; } }
+  @media(max-width:900px){ .nav-center{ display:none; } }
+  @media(max-width:640px){ .nav-actions{ display:none; } .menu-btn{ display:inline-flex; } .brand .role{ display:none; } }
 
   /* HERO */
   .hero{ position:relative; overflow:hidden; }
-  .hero::before{ content:""; position:absolute; inset:0; background:
-      radial-gradient(60% 50% at 80% -10%, rgba(44,83,240,.07), transparent 70%),
-      linear-gradient(180deg, var(--bg-2), var(--bg) 60%); z-index:-1; }
-  .hero-in{ padding:72px 0 64px; }
-  .chip{ display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:var(--success); background:var(--success-soft); border:1px solid #CBEEDD; border-radius:999px; padding:6px 13px; }
-  .dot{ width:7px; height:7px; border-radius:50%; background:currentColor; display:inline-block; }
-  .live{ position:relative; }
-  .live::after{ content:""; position:absolute; inset:-4px; border-radius:50%; border:1px solid currentColor; opacity:.5; animation:pulse 2s infinite; }
-  @keyframes pulse{ 0%{transform:scale(.6);opacity:.6} 100%{transform:scale(1.6);opacity:0} }
-  h1.title{ font-size:clamp(34px,5.4vw,58px); font-weight:800; margin:22px 0 0; max-width:16ch; }
-  .lead{ font-size:clamp(17px,2.2vw,20px); color:var(--text); max-width:60ch; margin-top:20px; }
+  .hero::before{ content:""; position:absolute; inset:0; z-index:-1; background:
+      radial-gradient(42% 52% at 88% 18%, rgba(255,106,43,.10), transparent 70%),
+      radial-gradient(30% 40% at 6% 0%, rgba(18,19,22,.04), transparent 70%); }
+  .hero-in{ display:grid; grid-template-columns:1.08fr .92fr; gap:56px; align-items:center; padding-top:64px; padding-bottom:88px; }
+  @media(max-width:960px){ .hero-in{ grid-template-columns:1fr; gap:40px; padding-top:40px; padding-bottom:64px; } }
+  .chip{ display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:var(--live); background:var(--live-soft); border:1px solid #C7E7D6; border-radius:999px; padding:6px 13px; }
+  .dot{ width:7px; height:7px; border-radius:50%; background:currentColor; display:inline-block; flex:0 0 auto; }
+  .pulse{ position:relative; }
+  .pulse::after{ content:""; position:absolute; inset:-4px; border-radius:50%; border:1px solid currentColor; opacity:.5; animation:pulse 2s infinite; }
+  @keyframes pulse{ 0%{transform:scale(.6);opacity:.6} 100%{transform:scale(1.7);opacity:0} }
+  .kicker{ display:block; font-family:var(--mono); font-size:13px; color:var(--muted); margin-top:26px; letter-spacing:.02em; }
+  h1.title{ font-size:clamp(38px,5.6vw,66px); font-weight:750; margin-top:10px; letter-spacing:-.035em; }
+  h1.title em{ font-style:normal; color:var(--accent); }
+  .lead{ font-size:clamp(16.5px,1.9vw,19px); color:var(--text); max-width:56ch; margin-top:22px; }
   .hero-cta{ display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-top:30px; }
-  .text-link{ font-size:14px; font-weight:600; color:var(--muted); transition:color var(--t); }
-  .text-link:hover{ color:var(--accent); }
-  .stats{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:56px; padding-top:34px; border-top:1px solid var(--line); }
-  .stat .num{ font-size:clamp(28px,4vw,40px); font-weight:700; color:var(--ink); letter-spacing:-.03em; font-family:"Geist Mono",monospace; }
-  .stat .lbl{ font-size:13px; color:var(--muted); margin-top:4px; }
-  @media(max-width:640px){ .stats{ grid-template-columns:repeat(2,1fr); gap:24px 16px; } }
+  .text-link{ font-size:14.5px; font-weight:600; color:var(--ink); padding:6px 2px; border-bottom:1px solid var(--line-2); transition:color var(--t), border-color var(--t); }
+  .text-link:hover{ color:var(--accent); border-color:var(--accent); }
+  .proof{ margin-top:30px; padding-top:18px; border-top:1px solid var(--line); font-family:var(--mono); font-size:12.5px; color:var(--muted); max-width:56ch; }
+
+  /* CALL CARD */
+  .call{ background:var(--night); color:var(--night-text); border-radius:22px; padding:24px; box-shadow:0 30px 60px -20px rgba(18,19,22,.45), 0 0 0 1px rgba(255,255,255,.04) inset; position:relative; overflow:hidden; }
+  .call::before{ content:""; position:absolute; inset:0; background:radial-gradient(60% 50% at 100% 0%, rgba(255,106,43,.16), transparent 70%); pointer-events:none; }
+  .call > *{ position:relative; }
+  .call-top{ display:flex; align-items:center; justify-content:space-between; gap:12px; font-family:var(--mono); font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--night-muted); }
+  .call-top .rec{ display:inline-flex; align-items:center; gap:8px; color:var(--signal); }
+  .call h2{ color:#fff; font-size:clamp(20px,2.3vw,24px); font-weight:650; letter-spacing:-.02em; margin-top:16px; line-height:1.22; }
+  .player{ display:grid; grid-template-columns:auto 1fr; gap:16px; align-items:center; margin-top:22px; background:var(--night-2); border:1px solid var(--night-line); border-radius:16px; padding:14px 16px 14px 14px; }
+  .play{ width:52px; height:52px; border-radius:50%; border:0; background:var(--signal); color:#1A0B04; display:grid; place-items:center; cursor:pointer; transition:transform var(--t), background var(--t); }
+  .play:hover{ transform:scale(1.05); background:#FF7E47; }
+  .play svg{ display:block; }
+  .play .i-pause{ display:none; }
+  .player.playing .play .i-play{ display:none; }
+  .player.playing .play .i-pause{ display:block; }
+  .wave-wrap{ min-width:0; }
+  .wave{ height:48px; display:flex; align-items:center; gap:2px; cursor:pointer; touch-action:none; }
+  .wave span{ flex:1 1 0; min-width:1px; border-radius:2px; background:#3A3F4A; transition:background .15s; }
+  .wave span.on{ background:var(--signal); }
+  .times{ display:flex; justify-content:space-between; font-family:var(--mono); font-size:11.5px; color:var(--night-muted); margin-top:6px; }
+  .legend{ display:flex; flex-wrap:wrap; gap:8px 18px; margin-top:16px; font-size:13px; color:var(--night-text); }
+  .legend .sw{ width:9px; height:9px; border-radius:50%; display:inline-block; margin-right:7px; vertical-align:1px; }
+  .call-note{ margin-top:16px; padding-top:14px; border-top:1px solid var(--night-line); font-size:13px; color:var(--night-muted); line-height:1.55; }
+  .call-link{ display:inline-flex; gap:6px; align-items:center; margin-top:12px; font-size:13.5px; font-weight:600; color:#fff; border-bottom:1px solid #4A4F5B; padding-bottom:2px; transition:border-color var(--t), color var(--t); }
+  .call-link:hover{ color:var(--signal); border-color:var(--signal); }
 
   /* SECTION HEAD */
-  .sec-head{ display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin-bottom:36px; }
-  .sec-head h2{ font-size:clamp(24px,3.2vw,32px); margin-top:8px; }
-  .sec-head p{ font-size:15px; color:var(--muted); margin-top:8px; max-width:48ch; }
+  .sec-head{ max-width:760px; margin-bottom:44px; }
+  .sec-head h2{ font-size:clamp(28px,3.8vw,42px); margin-top:12px; }
+  .sec-head p{ font-size:17px; color:var(--text); margin-top:16px; }
 
-  /* FEATURED */
-  .feat{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
-  @media(max-width:900px){ .feat{ grid-template-columns:1fr 1fr; } }
-  @media(max-width:640px){ .feat{ grid-template-columns:1fr; } }
-  .card{ background:var(--surface); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; display:flex; flex-direction:column; transition:transform var(--t), box-shadow var(--t), border-color var(--t); box-shadow:var(--shadow); }
+  /* VOICE */
+  .voice{ background:var(--card); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .voice-grid{ display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+  @media(max-width:960px){ .voice-grid{ grid-template-columns:1fr; gap:36px; } }
+  .steps{ list-style:none; counter-reset:s; display:flex; flex-direction:column; }
+  .step{ display:grid; grid-template-columns:44px 1fr; gap:6px 14px; padding:20px 0; border-top:1px solid var(--line); }
+  .step:last-child{ border-bottom:1px solid var(--line); }
+  .step .n{ font-family:var(--mono); font-size:13px; color:var(--accent); padding-top:3px; grid-row:span 3; }
+  .step h3{ font-size:19px; letter-spacing:-.015em; }
+  .step p{ font-size:15px; color:var(--text); }
+  .badge{ justify-self:start; display:inline-flex; align-items:center; gap:7px; font-family:var(--mono); font-size:11px; letter-spacing:.04em; text-transform:uppercase; padding:4px 9px; border-radius:7px; margin-top:4px; }
+  .badge.real{ color:var(--live); background:var(--live-soft); }
+  .badge.sim{ color:#8A5A00; background:#FBF0D9; }
+  .side{ display:flex; flex-direction:column; gap:18px; }
+  .shot{ border:1px solid var(--line); border-radius:var(--r); overflow:hidden; background:var(--night); box-shadow:var(--shadow); }
+  .shot img{ width:100%; height:auto; aspect-ratio:16/10; object-fit:cover; object-position:top; }
+  .shot figcaption{ background:var(--card); border-top:1px solid var(--line); padding:12px 16px; font-size:13px; color:var(--muted); display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; }
+  .shot figcaption a{ color:var(--accent); font-weight:600; }
+  details.transcript{ border:1px solid var(--line); border-radius:var(--r); background:var(--paper); }
+  details.transcript summary{ cursor:pointer; list-style:none; padding:16px 18px; font-weight:600; color:var(--ink); display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  details.transcript summary::-webkit-details-marker{ display:none; }
+  details.transcript summary .chev{ transition:transform var(--t); color:var(--muted); }
+  details.transcript[open] summary .chev{ transform:rotate(180deg); }
+  .lines{ padding:4px 18px 18px; display:flex; flex-direction:column; gap:10px; }
+  .line{ font-size:14px; line-height:1.5; padding:10px 13px; border-radius:12px; max-width:92%; }
+  .line b{ display:block; font-family:var(--mono); font-size:10.5px; font-weight:500; letter-spacing:.06em; text-transform:uppercase; margin-bottom:3px; }
+  .line.ai{ background:var(--accent-soft); color:#3B1A0E; align-self:flex-start; }
+  .line.ai b{ color:var(--accent); }
+  .line.ag{ background:#E9ECF2; color:#1F2633; align-self:flex-end; }
+  .line.ag b{ color:#4B5568; }
+  .lines .src{ font-size:12.5px; color:var(--muted); margin-top:4px; }
+  .stackline{ display:flex; flex-wrap:wrap; gap:8px; margin-top:28px; }
+  .ttag{ font-size:13px; font-weight:500; color:var(--text); background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:5px 11px; }
+  .ttag.hi{ color:var(--accent-ink); background:var(--accent-soft); border-color:#F2CDBD; }
+
+  /* PROJECTS */
+  .group{ margin-top:64px; }
+  .group:first-of-type{ margin-top:0; }
+  .group-head{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:12px 24px; align-items:end; margin-bottom:24px; padding-bottom:18px; border-bottom:1px solid var(--line-2); }
+  .group-head h3{ font-size:clamp(22px,2.6vw,28px); }
+  .group-head p{ font-size:15.5px; color:var(--text); margin-top:10px; max-width:68ch; }
+  .group-head .tagline{ font-family:var(--mono); font-size:12px; color:var(--muted); text-align:right; }
+  @media(max-width:720px){ .group-head{ grid-template-columns:1fr; } .group-head .tagline{ text-align:left; } }
+  .cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media(max-width:960px){ .cards{ grid-template-columns:1fr 1fr; } }
+  @media(max-width:640px){ .cards{ grid-template-columns:1fr; } }
+  .card{ background:var(--card); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; display:flex; flex-direction:column; transition:transform var(--t), box-shadow var(--t), border-color var(--t); box-shadow:var(--shadow); }
   .card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-lg); border-color:var(--line-2); }
-  .card-media{ aspect-ratio:16/10; background:var(--bg-2); border-bottom:1px solid var(--line); overflow:hidden; }
-  .card-media img{ width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .5s var(--t); }
+  .card-media{ aspect-ratio:16/10; background:var(--paper-2); border-bottom:1px solid var(--line); overflow:hidden; }
+  .card-media.dark{ background:#0B1118; }
+  .card-media img{ width:100%; height:100%; object-fit:cover; object-position:top; transition:transform .5s ease; }
   .card:hover .card-media img{ transform:scale(1.03); }
   .card-body{ padding:20px; display:flex; flex-direction:column; flex:1; }
-  .pill-row{ display:flex; align-items:center; gap:8px; margin-bottom:12px; }
-  .pill{ font-size:11.5px; font-weight:600; letter-spacing:.02em; padding:4px 10px; border-radius:999px; background:var(--bg-2); color:var(--muted); border:1px solid var(--line); }
-  .pill.live-pill{ color:var(--success); background:var(--success-soft); border-color:#CBEEDD; }
-  .card h3{ font-size:19px; display:flex; align-items:center; gap:7px; }
+  .pill-row{ display:flex; flex-wrap:wrap; align-items:center; gap:7px; margin-bottom:12px; }
+  .pill{ display:inline-flex; align-items:center; gap:6px; font-size:11.5px; font-weight:600; letter-spacing:.01em; padding:4px 10px; border-radius:999px; background:var(--paper); color:var(--muted); border:1px solid var(--line); }
+  .pill.live-pill{ color:var(--live); background:var(--live-soft); border-color:#C7E7D6; }
+  .card h4{ font-size:20px; display:flex; align-items:center; gap:8px; letter-spacing:-.02em; }
+  .card h4 .arr{ color:var(--accent); font-family:var(--body); font-size:17px; }
   .card .desc{ font-size:14.5px; color:var(--text); margin-top:9px; flex:1; }
-  .tags{ display:flex; flex-wrap:wrap; gap:7px; margin-top:16px; }
-  .tag{ font-size:12px; color:var(--muted); }
-  .tag::before{ content:"·"; margin-right:7px; color:var(--faint); }
-  .tag:first-child::before{ content:""; margin:0; }
-  .card-foot{ display:flex; align-items:center; justify-content:space-between; margin-top:16px; padding-top:14px; border-top:1px solid var(--line); }
-  .card-link{ font-size:13px; font-weight:600; color:var(--accent); display:inline-flex; align-items:center; gap:5px; }
+  .card-foot{ margin-top:16px; padding-top:14px; border-top:1px solid var(--line); }
+  .card-link{ font-size:13px; font-weight:600; color:var(--accent); }
+  .bigstat{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:20px; }
+  @media(max-width:720px){ .bigstat{ grid-template-columns:repeat(2,1fr); } }
+  .bcell{ background:var(--card); border:1px solid var(--line); border-radius:var(--r-sm); padding:18px 20px; }
+  .bcell .num{ font-size:clamp(26px,3vw,32px); font-weight:500; color:var(--ink); font-family:var(--mono); letter-spacing:-.04em; line-height:1.1; }
+  .bcell .lbl{ font-size:13px; color:var(--muted); margin-top:6px; }
+  .src-note{ font-size:12.5px; color:var(--muted); margin-top:12px; }
 
-  /* OTHERS */
-  .grid2{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
-  @media(max-width:640px){ .grid2{ grid-template-columns:1fr; } }
-  .row{ display:flex; align-items:flex-start; gap:14px; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-sm); padding:18px; transition:border-color var(--t), box-shadow var(--t); }
+  .rows{ display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+  @media(max-width:640px){ .rows{ grid-template-columns:1fr; } }
+  .row{ display:flex; align-items:flex-start; gap:14px; background:var(--card); border:1px solid var(--line); border-radius:var(--r-sm); padding:18px; transition:border-color var(--t), box-shadow var(--t); }
   a.row:hover{ border-color:var(--accent); box-shadow:var(--shadow); }
-  .row .ic{ flex:0 0 38px; height:38px; border-radius:9px; background:var(--accent-soft); color:var(--accent); display:grid; place-items:center; }
-  .row .ic.green{ background:var(--success-soft); color:var(--success); }
-  .row .ic.sky{ background:#E2F4FC; color:var(--azul); }
-  .row h4{ font-size:15px; color:var(--ink); font-weight:600; display:flex; align-items:center; gap:6px; }
-  .row p{ font-size:13.5px; color:var(--muted); margin-top:3px; }
-  .row .meta{ font-size:11.5px; color:var(--faint); margin-top:7px; font-weight:500; letter-spacing:.02em; text-transform:uppercase; }
-  .more-note{ text-align:center; font-size:14px; color:var(--muted); margin-top:26px; }
+  .row .ic{ flex:0 0 38px; height:38px; border-radius:10px; background:var(--accent-soft); color:var(--accent); display:grid; place-items:center; }
+  .row .ic.green{ background:var(--live-soft); color:var(--live); }
+  .row h5{ font-family:var(--display); font-size:16px; color:var(--ink); font-weight:650; display:flex; align-items:center; gap:6px; letter-spacing:-.01em; }
+  .row h5 .arr{ color:var(--accent); font-family:var(--body); }
+  .row p{ font-size:14px; color:var(--muted); margin-top:3px; }
+  .row .meta{ font-family:var(--mono); font-size:11px; color:var(--faint); margin-top:8px; letter-spacing:.04em; text-transform:uppercase; }
+  .more-note{ font-size:14px; color:var(--muted); margin-top:20px; }
+  .more-note a{ color:var(--accent); font-weight:600; }
 
   /* ABOUT */
-  .about{ display:grid; grid-template-columns:1fr 1.2fr; gap:56px; align-items:start; }
-  @media(max-width:820px){ .about{ grid-template-columns:1fr; gap:32px; } }
-  .about h2{ font-size:clamp(24px,3.4vw,34px); margin-bottom:20px; }
-  .about p{ font-size:16px; color:var(--text); margin-bottom:16px; }
-  .about p .hl{ color:var(--ink); font-weight:600; }
-  .facts{ border:1px solid var(--line); border-radius:var(--r); overflow:hidden; }
+  .about-sec{ background:var(--paper-2); }
+  .about{ display:grid; grid-template-columns:1.15fr .85fr; gap:56px; align-items:start; }
+  @media(max-width:900px){ .about{ grid-template-columns:1fr; gap:36px; } }
+  .about h2{ font-size:clamp(28px,3.6vw,40px); margin:12px 0 22px; }
+  .about p{ font-size:16.5px; color:var(--text); margin-bottom:16px; max-width:62ch; }
+  .facts{ border:1px solid var(--line-2); border-radius:var(--r); overflow:hidden; background:var(--card); }
   .fact{ display:flex; justify-content:space-between; gap:16px; padding:14px 18px; border-bottom:1px solid var(--line); font-size:14px; }
   .fact:last-child{ border-bottom:0; }
   .fact .k{ color:var(--muted); } .fact .v{ color:var(--ink); font-weight:600; text-align:right; }
-
-  /* NUMBERS */
-  .numbers{ background:var(--bg-2); }
-  .bigstat{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
-  @media(max-width:640px){ .bigstat{ grid-template-columns:repeat(2,1fr); } }
-  .bcell{ background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:24px; }
-  .bcell .num{ font-size:34px; font-weight:700; color:var(--ink); font-family:"Geist Mono",monospace; letter-spacing:-.03em; }
-  .bcell .lbl{ font-size:13px; color:var(--muted); margin-top:6px; }
-  .toolrow{ margin-top:18px; background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:24px; }
-  .toolrow .eyebrow{ margin-bottom:14px; display:block; }
+  @media(max-width:520px){ .fact{ flex-direction:column; gap:2px; } .fact .v{ text-align:left; } }
+  .before{ margin-top:18px; border:1px solid var(--line-2); border-radius:var(--r); background:var(--card); padding:18px; }
+  .before .eyebrow{ color:var(--muted); display:block; margin-bottom:14px; }
+  .before-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  .before-grid .num{ font-family:var(--mono); font-size:24px; color:var(--ink); letter-spacing:-.04em; }
+  .before-grid .lbl{ font-size:12.5px; color:var(--muted); margin-top:2px; line-height:1.4; }
+  .toolrow{ margin-top:36px; }
+  .toolrow .eyebrow{ color:var(--muted); display:block; margin-bottom:12px; }
   .toolcloud{ display:flex; flex-wrap:wrap; gap:8px; }
-  .ttag{ font-size:13px; font-weight:500; color:var(--text); background:var(--bg-2); border:1px solid var(--line); border-radius:8px; padding:6px 12px; }
-  .ttag.hi{ color:var(--accent); background:var(--accent-soft); border-color:#D9E2FF; }
-  .note{ font-size:12.5px; color:var(--faint); margin-top:16px; }
+  .toolcloud .ttag{ background:var(--card); }
 
   /* CONTACT */
-  .contact{ text-align:center; }
-  .contact h2{ font-size:clamp(26px,4vw,40px); }
-  .contact p{ font-size:17px; color:var(--muted); margin:14px auto 28px; max-width:46ch; }
-  .contact-cta{ display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
-  .copy-btn{ display:inline-flex; align-items:center; gap:8px; }
+  .contact{ background:var(--night); color:var(--night-text); }
+  .contact-in{ display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:end; }
+  @media(max-width:860px){ .contact-in{ grid-template-columns:1fr; } }
+  .contact .eyebrow{ color:var(--signal); }
+  .contact h2{ color:#fff; font-size:clamp(34px,5vw,58px); margin-top:12px; letter-spacing:-.035em; }
+  .contact p{ font-size:17px; color:var(--night-text); margin-top:16px; max-width:46ch; }
+  .mail{ display:block; font-family:var(--mono); font-size:clamp(15px,2vw,19px); color:#fff; border-bottom:1px solid #3B404B; padding-bottom:10px; word-break:break-all; transition:color var(--t), border-color var(--t); }
+  .mail:hover{ color:var(--signal); border-color:var(--signal); }
+  .contact-cta{ display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+  .contact .btn-ghost{ background:transparent; color:#fff; border-color:#3B404B; }
+  .contact .btn-ghost:hover{ border-color:#fff; }
+  .contact .btn-accent{ background:var(--signal); color:#1A0B04; }
+  .contact .btn-accent:hover{ background:#FF7E47; }
 
-  /* FOOTER */
-  footer{ border-top:1px solid var(--line); padding:28px 0; }
-  .foot-in{ display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:space-between; font-size:13px; color:var(--muted); }
-  .foot-in a{ color:var(--muted); transition:color var(--t); } .foot-in a:hover{ color:var(--ink); }
+  footer{ background:var(--night); border-top:1px solid var(--night-line); padding:24px 0; }
+  .foot-in{ display:flex; flex-wrap:wrap; gap:12px 20px; align-items:center; justify-content:space-between; font-size:13px; color:var(--night-muted); }
+  .foot-in a{ transition:color var(--t); } .foot-in a:hover{ color:#fff; }
 
   /* reveal */
-  .reveal{ opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
   .reveal.in{ opacity:1; transform:none; }
-  @media(prefers-reduced-motion:reduce){ .reveal{ opacity:1; transform:none; } .live::after{ animation:none; } }
+  @media(prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } .reveal{ opacity:1; transform:none; transition:none; } .pulse::after{ animation:none; } .card,.card-media img,.btn{ transition:none; } }
 </style>
 </head>
 <body>
@@ -196,27 +284,32 @@
 <!-- NAV -->
 <nav id="nav">
   <div class="wrap nav-in">
-    <a href="#top" class="brand"><span class="mark">GB</span><span>Gabriel Belcastro</span><span class="avail" title="Disponível para trabalho remoto"></span></a>
+    <a href="#top" class="brand" aria-label="Gabriel Belcastro">
+      <span class="mark">GB</span>
+      <span class="who"><span class="name">Gabriel Belcastro</span><span class="role" data-pt="IA de voz · agentes · automação">Voice AI · agents · automation</span></span>
+    </a>
     <div class="nav-center">
-      <a href="#work" class="nav-link" data-sec="work" data-pt="Projetos">Projects</a>
-      <a href="#about" class="nav-link" data-sec="about" data-pt="Sobre">About</a>
-      <a href="#numbers" class="nav-link" data-sec="numbers" data-pt="Números">Numbers</a>
+      <a href="#voz" class="nav-link" data-sec="voz" data-pt="IA de voz">Voice AI</a>
+      <a href="#projetos" class="nav-link" data-sec="projetos" data-pt="Projetos">Projects</a>
+      <a href="#sobre" class="nav-link" data-sec="sobre" data-pt="Sobre">About</a>
+      <a href="#contato" class="nav-link" data-sec="contato" data-pt="Contato">Contact</a>
     </div>
     <div class="nav-actions">
       <button class="lang-btn" data-lang-btn aria-label="Language / Idioma"><span class="l-en">EN</span><span class="sep">/</span><span class="l-pt">PT</span></button>
-      <a href="#contact" class="btn btn-solid btn-sm" data-pt="Falar comigo">Get in touch</a>
+      <a href="#contato" class="btn btn-solid btn-sm" data-pt="Falar comigo">Get in touch</a>
     </div>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
   </div>
   <div id="mobileMenu">
-    <a href="#work" class="m-link" data-pt="Projetos">Projects</a>
-    <a href="#about" class="m-link" data-pt="Sobre">About</a>
-    <a href="#numbers" class="m-link" data-pt="Números">Numbers</a>
+    <a href="#voz" class="m-link" data-pt="IA de voz">Voice AI</a>
+    <a href="#projetos" class="m-link" data-pt="Projetos">Projects</a>
+    <a href="#sobre" class="m-link" data-pt="Sobre">About</a>
+    <a href="#contato" class="m-link" data-pt="Contato">Contact</a>
     <div class="m-foot">
       <button class="lang-btn" data-lang-btn aria-label="Language / Idioma"><span class="l-en">EN</span><span class="sep">/</span><span class="l-pt">PT</span></button>
-      <a href="#contact" class="btn btn-solid btn-sm m-link" data-pt="Falar comigo">Get in touch</a>
+      <a href="mailto:gabrielbelcastro.contatos@gmail.com" class="btn btn-solid btn-sm" data-pt="Mandar e-mail">Email me</a>
     </div>
   </div>
 </nav>
@@ -224,213 +317,306 @@
 <!-- HERO -->
 <header id="top" class="hero">
   <div class="wrap hero-in">
-    <span class="chip"><span class="dot live"></span><span data-pt="Disponível para trabalho remoto">Available for remote work</span></span>
-    <h1 class="title reveal" data-pt="Fui emissor de passagens. Hoje construo a IA que faz o trabalho.">I was a flight-ticket agent. Now I build the AI that does the work.</h1>
-    <p class="lead reveal" data-pt="Passei dois anos num balcão de milhas, emitindo cerca de 600 passagens por mês. Aprendi sozinho a construir com IA, cortei meu tempo de trabalho pela metade e transformei isso em produtos de verdade. Hoje toco tudo sozinho, com a IA como meu time.">I spent two years at a miles desk, issuing around 600 tickets a month. I taught myself to build with AI, cut my own handling time in half, and turned that into real products. Today I run it all solo, with AI as my team.</p>
-    <div class="hero-cta reveal">
-      <a href="#work" class="btn btn-solid" data-pt="Ver projetos">See projects</a>
-      <a href="#contact" class="btn btn-ghost" data-pt="Falar comigo">Get in touch</a>
-      <a href="https://www.linkedin.com/in/gabrielbelcastro" target="_blank" rel="noopener" class="text-link">LinkedIn</a>
-      <a href="https://github.com/gabrielbelcastro" target="_blank" rel="noopener" class="text-link">GitHub</a>
+    <div>
+      <span class="chip"><span class="dot pulse"></span><span data-pt="Disponível para trabalho remoto">Available for remote work</span></span>
+      <span class="kicker" data-pt="Gabriel Belcastro · Rio de Janeiro, Brasil">Gabriel Belcastro · Rio de Janeiro, Brazil</span>
+      <h1 class="title" data-pt="Construo IA de voz e agentes que fazem o trabalho de verdade.">I build voice AI and agents that do the actual work.</h1>
+      <p class="lead" data-pt="Uma assistente de voz que liga para a central da companhia aérea e pede o reembolso de um no-show. Um painel com agentes que rodam sozinhos todo dia. Extensões que a equipe usa no site da companhia. Construí tudo sozinho, com Claude Code, depois de dois anos na linha de frente emitindo passagens.">A voice assistant that calls the airline's call center to claim a no-show refund. A dashboard with agents that run unattended every day. Extensions the team uses on the airline's website. I built all of it solo, with Claude Code, after two years on the front line issuing flight tickets.</p>
+      <div class="hero-cta">
+        <a href="mailto:gabrielbelcastro.contatos@gmail.com" class="btn btn-accent">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <span data-pt="Mandar e-mail">Email me</span>
+        </a>
+        <a href="#projetos" class="btn btn-ghost" data-pt="Ver projetos">See projects</a>
+        <a href="https://www.linkedin.com/in/gabrielbelcastro" target="_blank" rel="noopener" class="text-link">LinkedIn</a>
+        <a href="https://github.com/gabrielbelcastro" target="_blank" rel="noopener" class="text-link">GitHub</a>
+      </div>
+      <p class="proof" data-pt="9.067 commits em 25 repositórios, de março a novembro de 2026, contados no GitHub.">9,067 commits across 25 repositories, March to November 2026, counted on GitHub.</p>
     </div>
-    <div class="stats reveal">
-      <div class="stat"><div class="num count" data-target="9067">0</div><div class="lbl" data-pt="Commits desde março">Commits since March</div></div>
-      <div class="stat"><div class="num count" data-target="25">0</div><div class="lbl" data-pt="Repositórios no GitHub">Repositories on GitHub</div></div>
-      <div class="stat"><div class="num count" data-target="50" data-prefix="~" data-suffix="%">0</div><div class="lbl" data-pt="Tempo economizado com IA">Time saved with AI</div></div>
-      <div class="stat"><div class="num count" data-target="600" data-suffix="+">0</div><div class="lbl" data-pt="Emissões por mês">Tickets per month</div></div>
-    </div>
+
+    <aside class="call" aria-labelledby="callTitle">
+      <div class="call-top">
+        <span class="rec"><span class="dot"></span><span data-pt="Ligação de teste">Test call</span></span>
+        <span>1:42</span>
+      </div>
+      <h2 id="callTitle" data-pt="Clara, a assistente de voz da Domus, pede o reembolso da taxa de embarque de um no-show, até o protocolo.">Clara, Domus's voice assistant, claims a no-show boarding-fee refund, all the way to the protocol number.</h2>
+      <div class="player" id="player">
+        <button class="play" id="playBtn" type="button" aria-label="Play">
+          <svg class="i-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+          <svg class="i-pause" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+        </button>
+        <div class="wave-wrap">
+          <div class="wave" id="wave" role="slider" tabindex="0" aria-label="Posição da ligação" aria-valuemin="0" aria-valuemax="102" aria-valuenow="0" aria-valuetext="0:00"></div>
+          <div class="times"><span id="tCur">0:00</span><span id="tDur">1:42</span></div>
+        </div>
+        <audio id="audio" preload="metadata" src="audio/clara-ligacao-de-teste.mp3"></audio>
+      </div>
+      <div class="legend">
+        <span><span class="sw" style="background:var(--signal)"></span><span data-pt="Voz feminina: Clara, gerada por IA">Female voice: Clara, AI-generated</span></span>
+        <span><span class="sw" style="background:#8DA2C9"></span><span data-pt="Voz masculina: atendente simulado">Male voice: simulated agent</span></span>
+      </div>
+      <p class="call-note" data-pt="A conversa completa foi testada contra um atendente simulado. A navegação da URA e a detecção de atendente foram medidas em ligações reais para a Azul. A ligação é em português.">The full conversation was tested against a simulated agent. IVR navigation and agent detection were measured on real calls to Azul. The call is in Portuguese.</p>
+      <a href="#voz" class="call-link"><span data-pt="Como funciona e a transcrição">How it works, and the transcript</span> ↓</a>
+    </aside>
   </div>
 </header>
 
-<!-- WORK -->
-<section id="work" class="sec">
+<!-- VOICE -->
+<section id="voz" class="sec voice">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div>
-        <span class="eyebrow" data-pt="Principais projetos">Featured projects</span>
-        <h2 data-pt="Três produtos no ar, nascidos do problema que eu vivia todo dia">Three live products, born from the problem I lived every day</h2>
+      <span class="eyebrow" data-pt="IA de voz para atendimento">Voice AI for customer service</span>
+      <h2 data-pt="Central de atendimento da Domus">The Domus call center</h2>
+      <p data-pt="Para pegar de volta a taxa de embarque de um no-show, alguém precisa ligar para a central da Azul, passar pela URA e esperar na linha. Num domingo em que medi, a espera chegou perto de uma hora. A central da Domus faz esse caminho e deixa a equipe acompanhar cada ligação ao vivo.">Getting a no-show boarding fee back means calling Azul's call center, getting through the IVR and waiting on hold. On one Sunday I measured, the wait came close to an hour. The Domus call center walks that path and lets the team follow every call live.</p>
+    </div>
+
+    <div class="voice-grid">
+      <ol class="steps reveal">
+        <li class="step">
+          <span class="n">01</span>
+          <h3 data-pt="A ligação sai de um pedido pronto">Each call starts from a ready request</h3>
+          <p data-pt="Os dados do titular e do bilhete vêm da fila de no-shows antes de discar, para a conversa não depender de memória.">The holder's and ticket's details come from the no-show queue before dialing, so the conversation never depends on memory.</p>
+        </li>
+        <li class="step">
+          <span class="n">02</span>
+          <h3 data-pt="A URA é navegada sozinha">The IVR is navigated automatically</h3>
+          <p data-pt="O sistema aperta as teclas da URA da Azul e reconhece quando um atendente humano entra na linha.">The system presses the keys on Azul's IVR and recognizes when a human agent comes on the line.</p>
+          <span class="badge real"><span class="dot"></span><span data-pt="Medido em ligações reais">Measured on real calls</span></span>
+        </li>
+        <li class="step">
+          <span class="n">03</span>
+          <h3 data-pt="A Clara conduz o pedido">Clara handles the request</h3>
+          <p data-pt="Segue um roteiro em passos até o protocolo: código da reserva, confirmação do cancelamento, valor da taxa e forma do estorno.">She follows a step-by-step script to the protocol number: booking code, cancellation, fee amount and refund method.</p>
+          <span class="badge sim"><span class="dot"></span><span data-pt="Testado com atendente simulado">Tested with a simulated agent</span></span>
+        </li>
+        <li class="step">
+          <span class="n">04</span>
+          <h3 data-pt="A equipe acompanha ao vivo">The team follows along live</h3>
+          <p data-pt="Os dois lados são gravados em separado, a transcrição sai segundos depois de cada fala, com CPF e cartão cobertos, e quem monitora recebe um alerta quando a voz do atendente para de chegar.">Both sides are recorded separately, the transcript appears seconds after each line with ID and card numbers masked, and whoever is monitoring gets an alert when the agent's voice stops coming through.</p>
+        </li>
+      </ol>
+
+      <div class="side reveal">
+        <figure class="shot">
+          <img src="screenshots/domus-central.jpg" alt="Página da Central de atendimento Domus, com o player da ligação" loading="lazy" width="1280" height="800" />
+          <figcaption><span data-pt="A página pública da central, com o mesmo áudio.">The public call center page, with the same audio.</span><a href="https://domuspi.com.br/central-de-atendimento.html" target="_blank" rel="noopener"><span data-pt="Abrir a página">Open the page</span> ↗</a></figcaption>
+        </figure>
+        <details class="transcript">
+          <summary><span data-pt="Ler a ligação inteira (em português)">Read the full call (in Portuguese)</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div class="lines">
+            <div class="line ai"><b>Clara · IA</b>Oi, boa tarde. Meu nome é Clara e eu quero pedir a taxa de embarque de um no-show.</div>
+            <div class="line ag"><b data-pt="Atendente simulado">Simulated agent</b>Tudo bem, Clara. Me passa, por gentileza, o código da reserva?</div>
+            <div class="line ai"><b>Clara · IA</b>T de tatu, S de sapo, T de tatu, R de rato, B de bola, O de olho.</div>
+            <div class="line ag"><b data-pt="Atendente simulado">Simulated agent</b>Localizei, voo AD 4021, Campinas para Recife, não embarcada. Você quer o cancelamento com reembolso da taxa de embarque, é isso?</div>
+            <div class="line ai"><b>Clara · IA</b>Confirmo, sim.</div>
+            <div class="line ag"><b data-pt="Atendente simulado">Simulated agent</b>Então eu faço o cancelamento sem devolução dos pontos, e a taxa de embarque, de setenta e um reais e seis centavos, é estornada no mesmo cartão da compra, em até duas faturas. Posso dar andamento?</div>
+            <div class="line ai"><b>Clara · IA</b>Positivo. Pode prosseguir com o cancelamento, sem os pontos de volta, só com a devolução da taxa de embarque, setenta e um reais e seis centavos, na forma de pagamento original.</div>
+            <div class="line ag"><b data-pt="Atendente simulado">Simulated agent</b>Prontinho, cancelamento realizado e estorno solicitado. Posso ajudar em algo mais?</div>
+            <div class="line ai"><b>Clara · IA</b>Não, só isso. Ficam os setenta e um reais e seis centavos na forma de pagamento original, em até duas faturas, protocolo L A Z C, três três zero quatro, um nove seis sete. Obrigada, Luís, e tenha uma ótima tarde.</div>
+            <div class="line ag"><b data-pt="Atendente simulado">Simulated agent</b>Eu que agradeço, Clara. A Azul agradece o seu contato. Tenha uma boa tarde.</div>
+            <div class="line ai"><b>Clara · IA</b>Obrigada, tchau.</div>
+            <p class="src" data-pt="Rodada de teste com dados fictícios: reserva, voo e protocolo não são reais.">Test round with fictitious data: the booking, flight and protocol are not real.</p>
+          </div>
+        </details>
       </div>
     </div>
-    <div class="feat">
 
-      <!-- Labs Aero -->
-      <a class="card reveal" href="https://labsaero.com" target="_blank" rel="noopener">
-        <div class="card-media"><img src="screenshots/labsaero.jpg" alt="Labs Aero" loading="lazy" /></div>
-        <div class="card-body">
-          <div class="pill-row"><span class="pill live-pill"><span class="dot"></span><span data-pt="No ar">Live</span></span><span class="pill" data-pt="Minha empresa">My company</span></div>
-          <h3>Labs Aero <span class="accent">↗</span></h3>
-          <p class="desc" data-pt="Minha empresa própria. Um conjunto de ferramentas de IA para o mercado de milhas, com site, newsletter e cinco produtos. No ar.">My own company. A suite of AI tools for the airline-miles market, with a website, a newsletter and five products. Live.</p>
-          <div class="tags"><span class="tag" data-pt="Fundador">Founder</span><span class="tag">5 <span data-pt="produtos">products</span></span><span class="tag">IA</span></div>
-          <div class="card-foot"><span class="card-link">labsaero.com</span></div>
-        </div>
-      </a>
-
-      <!-- Miles Terminal -->
-      <a class="card reveal" href="https://labsaero.com/milesterminal/" target="_blank" rel="noopener">
-        <div class="card-media"><img src="screenshots/milesterminal.jpg" alt="Miles Terminal" loading="lazy" /></div>
-        <div class="card-body">
-          <div class="pill-row"><span class="pill live-pill"><span class="dot"></span><span data-pt="Em produção">In production</span></span></div>
-          <h3>Miles Terminal <span class="accent">↗</span></h3>
-          <p class="desc" data-pt="Um painel que reúne a operação de milhas de várias companhias. Lê os bilhetes sozinho com IA e mostra o desempenho de cada emissor num só lugar. Em produção.">A dashboard that unifies miles operations across airlines. It reads tickets on its own with AI and shows each agent's performance in one place. In production.</p>
-          <div class="tags"><span class="tag" data-pt="Automação">Automation</span><span class="tag" data-pt="Leitura por IA">AI reading</span><span class="tag">Dashboard</span></div>
-          <div class="card-foot"><span class="card-link">labsaero.com/milesterminal</span></div>
-        </div>
-      </a>
-
-      <!-- Capturador Smiles -->
-      <a class="card reveal" href="https://chromewebstore.google.com/detail/capturador-smiles/magommhhlfhpeblednfmnkabgigddmnj" target="_blank" rel="noopener">
-        <div class="card-media"><img src="screenshots/capturador-smiles-acao.jpg" alt="Capturador Smiles em ação" loading="lazy" /></div>
-        <div class="card-body">
-          <div class="pill-row"><span class="pill live-pill"><span class="dot"></span><span data-pt="Clientes pagantes">Paying users</span></span><span class="pill">SaaS</span></div>
-          <h3>Capturador Smiles <span class="accent">↗</span></h3>
-          <p class="desc" data-pt="Uma extensão do Chrome que virou produto pago, com clientes ativos. Organiza contas de milhas com segurança, com login único e assinatura de R$ 18,99 por mês.">A Chrome extension that became a paid product, with active users. It organizes miles accounts securely, with a single login and a R$ 18,99 per month subscription.</p>
-          <div class="tags"><span class="tag" data-pt="Produto">Product</span><span class="tag" data-pt="Assinatura">Subscription</span><span class="tag" data-pt="Segurança">Security</span></div>
-          <div class="card-foot"><span class="card-link" data-pt="Instalar na Chrome Web Store">Install on the Chrome Web Store</span></div>
-        </div>
-      </a>
-
+    <div class="stackline reveal" aria-label="Stack">
+      <span class="ttag hi" data-pt="Voz: ElevenLabs">Voice: ElevenLabs</span>
+      <span class="ttag" data-pt="Roteiro em passos">Step-by-step script</span>
+      <span class="ttag" data-pt="Navegação de URA por tom (DTMF)">IVR navigation by tone (DTMF)</span>
+      <span class="ttag" data-pt="Detecção de atendente">Agent detection</span>
+      <span class="ttag" data-pt="Transcrição ao vivo com dados cobertos">Live transcript with masking</span>
+      <span class="ttag">Python</span>
+      <span class="ttag" data-pt="App Android de ponte de áudio">Android audio-bridge app</span>
     </div>
   </div>
 </section>
 
-<!-- DOMUS -->
-<section id="domus" class="sec" style="padding-top:0;">
+<!-- PROJECTS -->
+<section id="projetos" class="sec">
+  <span id="work" aria-hidden="true"></span>
   <div class="wrap">
     <div class="sec-head reveal">
-      <div>
-        <span class="eyebrow" data-pt="Projeto em produção · código privado">Production project · private code</span>
-        <h2 data-pt="Domus: o sistema operacional de uma agência de milhas">Domus: the operating system of a miles agency</h2>
-        <p data-pt="Painel em produção que concentra o saldo real de milhas de cada conta, o custo de cada API e o estado dos agentes que rodam sozinhos todo dia. Em volta dele, 13 projetos: leitura de saldo e extrato nos programas de fidelidade, conciliação de emissões, aviso de no-show, cadastro automático em promoções, extensão para a equipe de emissores e bots de WhatsApp. Construí sozinho, com Claude, em três meses e meio.">A production dashboard holding the real miles balance of every account, the cost of every API and the state of the agents that run unattended every day. Around it, 13 projects: balance and statement reading across loyalty programs, ticket reconciliation, no-show alerts, automatic promo enrollment, a Chrome extension for the ticketing team and WhatsApp bots. Built solo, with Claude, in three and a half months.</p>
+      <span class="eyebrow" data-pt="Outras implementações de IA">More AI work</span>
+      <h2 data-pt="Agentes, painéis e extensões para uma operação de verdade">Agents, dashboards and extensions for a real operation</h2>
+    </div>
+
+    <!-- DOMUS -->
+    <div class="group" id="domus">
+      <div class="group-head reveal">
+        <div>
+          <h3 data-pt="Domus: o sistema de uma agência de milhas">Domus: the operating system of a miles agency</h3>
+          <p data-pt="Um painel em produção com o saldo real de milhas de cada conta, o custo de cada API e o estado dos agentes que rodam sozinhos todo dia. Em volta dele, 13 projetos: leitura de saldo e extrato nos programas de fidelidade, conciliação de emissões, aviso de no-show, cadastro automático em promoções, a central de atendimento, a extensão da equipe e bots de WhatsApp. O código é privado.">A production dashboard holding the real miles balance of every account, the cost of every API and the state of the agents that run unattended every day. Around it, 13 projects: balance and statement reading across loyalty programs, ticket reconciliation, no-show alerts, automatic promo enrollment, the call center, the team's extension and WhatsApp bots. The code is private.</p>
+        </div>
+        <span class="tagline" data-pt="ago–nov 2026 · sozinho, com Claude Code">Aug–Nov 2026 · solo, with Claude Code</span>
+      </div>
+      <div class="cards">
+        <a class="card reveal" href="https://domuspi.com.br/demonstracao.html" target="_blank" rel="noopener">
+          <div class="card-media dark"><img src="screenshots/domus-painel.jpg" alt="Painel Domus em demonstração" loading="lazy" width="1280" height="800" /></div>
+          <div class="card-body">
+            <div class="pill-row"><span class="pill live-pill"><span class="dot"></span><span data-pt="Demonstração aberta">Open demo</span></span><span class="pill" data-pt="Painel">Dashboard</span></div>
+            <h4><span data-pt="Painel Domus">Domus dashboard</span> <span class="arr">↗</span></h4>
+            <p class="desc" data-pt="O painel de produção, aberto para navegar com dados fictícios: saldo de milhas por conta, rodadas dos agentes, no-show, conciliação, custo de cada API e a saúde do servidor.">The production dashboard, open to browse with fictitious data: miles balance per account, agent runs, no-shows, reconciliation, the cost of every API and server health.</p>
+            <div class="card-foot"><span class="card-link" data-pt="Abrir a demonstração">Open the demo</span></div>
+          </div>
+        </a>
+        <a class="card reveal" href="capturador-azul.html">
+          <div class="card-media"><img src="screenshots/capturador-azul-card.jpg" alt="Capturador Azul, extensão da equipe" loading="lazy" width="1280" height="800" /></div>
+          <div class="card-body">
+            <div class="pill-row"><span class="pill live-pill"><span class="dot"></span><span data-pt="Em uso pela equipe">Used by the team</span></span><span class="pill" data-pt="Extensão do Chrome">Chrome extension</span></div>
+            <h4>Capturador Azul <span class="arr">→</span></h4>
+            <p class="desc" data-pt="A extensão dos emissores da Domus no site da Azul: mostra as contas do grupo de cada pessoa, registra pontos e taxas de cada busca e calcula o preço por trecho e o de Pontos + Dinheiro. Senha e cartão nunca chegam a ela.">The ticketing team's extension on the Azul website: it shows each person's account group, records points and fees from every search and prices each leg and the Points + Cash fare. Passwords and cards never reach it.</p>
+            <div class="card-foot"><span class="card-link" data-pt="Ver a página do projeto">See the project page</span></div>
+          </div>
+        </a>
+        <a class="card reveal" href="https://domuspi.com.br/servicos.html" target="_blank" rel="noopener">
+          <div class="card-media dark"><img src="screenshots/domus-servicos.jpg" alt="Site de serviços da Domus" loading="lazy" width="1280" height="800" /></div>
+          <div class="card-body">
+            <div class="pill-row"><span class="pill live-pill"><span class="dot"></span><span data-pt="No ar">Live</span></span><span class="pill">Site</span></div>
+            <h4><span data-pt="Site da Domus">Domus website</span> <span class="arr">↗</span></h4>
+            <p class="desc" data-pt="A página que oferece a outras agências os robôs que rodam todo dia na operação da Domus: promoções, pontos parados, conciliação de emissões e no-show.">The page that offers other agencies the robots that run every day in Domus's own operation: promotions, idle points, ticket reconciliation and no-shows.</p>
+            <div class="card-foot"><span class="card-link" data-pt="Ver o site">See the website</span></div>
+          </div>
+        </a>
+      </div>
+      <div class="bigstat reveal">
+        <div class="bcell"><div class="num count" data-target="8278">8278</div><div class="lbl" data-pt="Commits">Commits</div></div>
+        <div class="bcell"><div class="num count" data-target="14">14</div><div class="lbl" data-pt="Repositórios privados">Private repositories</div></div>
+        <div class="bcell"><div class="num count" data-target="102">102</div><div class="lbl" data-pt="Dias, de agosto a novembro de 2026">Days, August to November 2026</div></div>
+        <div class="bcell"><div class="num">1</div><div class="lbl" data-pt="Pessoa, com a IA como time">Person, with AI as the team</div></div>
+      </div>
+      <p class="src-note reveal" data-pt="Contagem tirada do histórico git dos 14 repositórios do ecossistema.">Counted from the git history of the ecosystem's 14 repositories.</p>
+    </div>
+
+    <!-- LABS AERO -->
+    <div class="group" id="labsaero">
+      <div class="group-head reveal">
+        <div>
+          <h3 data-pt="Labs Aero: minhas ferramentas para o mercado de milhas">Labs Aero: my tools for the airline-miles market</h3>
+          <p data-pt="Antes da Domus, comecei pelo meu próprio balcão: um terminal web para a operação e extensões que tiram o trabalho repetitivo do emissor.">Before Domus, I started with my own desk: a web terminal for the operation and extensions that take repetitive work off the ticketing agent.</p>
+        </div>
+        <span class="tagline" data-pt="2026 · fundador">2026 · founder</span>
+      </div>
+      <div class="cards">
+        <a class="card reveal" href="miles-terminal.html">
+          <div class="card-media"><img src="screenshots/milesterminal.jpg" alt="Miles Terminal, tela inicial com os módulos" loading="lazy" width="1200" height="750" /></div>
+          <div class="card-body">
+            <div class="pill-row"><span class="pill" data-pt="App web">Web app</span><span class="pill" data-pt="Leitura por IA">AI reading</span></div>
+            <h4>Miles Terminal <span class="arr">→</span></h4>
+            <p class="desc" data-pt="Um terminal web para a operação de milhas: processa cartões e extratos da LATAM, mostra o desempenho de cada emissor a partir da planilha de vendas e monta a busca de voos a partir de um print, lido por IA.">A web terminal for miles operations: it processes LATAM cards and statements, shows each agent's performance from the sales spreadsheet and builds a flight search from a screenshot, read by AI.</p>
+            <div class="card-foot"><span class="card-link" data-pt="Ver a página do projeto">See the project page</span></div>
+          </div>
+        </a>
+        <a class="card reveal" href="https://chromewebstore.google.com/detail/capturador-smiles/magommhhlfhpeblednfmnkabgigddmnj" target="_blank" rel="noopener">
+          <div class="card-media"><img src="screenshots/capturador-smiles-acao.jpg" alt="Capturador Smiles em ação no site da Smiles" loading="lazy" /></div>
+          <div class="card-body">
+            <div class="pill-row"><span class="pill live-pill"><span class="dot"></span>Chrome Web Store</span><span class="pill" data-pt="Extensão do Chrome">Chrome extension</span></div>
+            <h4>Capturador Smiles <span class="arr">↗</span></h4>
+            <p class="desc" data-pt="Extensão publicada na Chrome Web Store que captura o extrato e preenche a emissão no site da Smiles. Nasceu como SaaS, com login, assinatura e cofre de senhas criptografado no navegador. Hoje é ferramenta interna de uma agência, com acesso por lista.">A Chrome Web Store extension that captures the statement and fills in the booking on the Smiles website. It started as a SaaS, with login, subscription and an in-browser encrypted password vault. Today it is an internal tool for one agency, with allow-list access.</p>
+            <div class="card-foot"><span class="card-link" data-pt="Ver na Chrome Web Store">See it on the Chrome Web Store</span></div>
+          </div>
+        </a>
+        <a class="card reveal" href="https://labsaero.com" target="_blank" rel="noopener">
+          <div class="card-media"><img src="screenshots/labsaero.jpg" alt="Site da Labs Aero" loading="lazy" /></div>
+          <div class="card-body">
+            <div class="pill-row"><span class="pill live-pill"><span class="dot"></span><span data-pt="No ar">Live</span></span><span class="pill">Site</span></div>
+            <h4>Labs Aero <span class="arr">↗</span></h4>
+            <p class="desc" data-pt="O site da marca, com as ferramentas, o blog e o boletim de milhas.">The brand's website, with the tools, the blog and the miles bulletin.</p>
+            <div class="card-foot"><span class="card-link">labsaero.com</span></div>
+          </div>
+        </a>
       </div>
     </div>
-    <div class="bigstat reveal">
-      <div class="bcell"><div class="num count" data-target="8278">0</div><div class="lbl" data-pt="Commits">Commits</div></div>
-      <div class="bcell"><div class="num count" data-target="14">0</div><div class="lbl" data-pt="Repositórios">Repositories</div></div>
-      <div class="bcell"><div class="num count" data-target="102">0</div><div class="lbl" data-pt="Dias, de ago a nov de 2026">Days, Aug to Nov 2026</div></div>
-      <div class="bcell"><div class="num count" data-target="1">0</div><div class="lbl" data-pt="Pessoa, com a IA como time">Person, with AI as the team</div></div>
+
+    <!-- MORE -->
+    <div class="group" id="mais">
+      <div class="group-head reveal">
+        <div><h3 data-pt="Mais projetos">More projects</h3></div>
+        <span class="tagline" data-pt="bots · extensões · sites">bots · extensions · websites</span>
+      </div>
+      <div class="rows">
+        <div class="row reveal">
+          <div class="ic green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg></div>
+          <div><h5>WhatsApp Milhas</h5><p data-pt="Lê fotos de bilhetes no WhatsApp com IA e organiza tudo numa planilha.">Reads ticket photos on WhatsApp with AI and organizes everything in a spreadsheet.</p><div class="meta" data-pt="Bot · IA de visão">Bot · Vision AI</div></div>
+        </div>
+        <div class="row reveal">
+          <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+          <div><h5>Transcrevedor de Documentos</h5><p data-pt="Extrai os dados de RG, CNH e passaporte automaticamente por IA.">Extracts data from IDs, driver's licenses and passports automatically with AI.</p><div class="meta" data-pt="Extensão · IA">Extension · AI</div></div>
+        </div>
+        <a class="row reveal" href="https://viajagencia.com.br" target="_blank" rel="noopener">
+          <div class="ic green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 9h18M3 9l2-5h14l2 5M5 9v11h14V9"/></svg></div>
+          <div><h5>Viajá Turismo <span class="arr">↗</span></h5><p data-pt="Site de viagens com cotação direta pelo WhatsApp.">Travel website with direct WhatsApp quoting.</p><div class="meta" data-pt="Site · No ar">Website · Live</div></div>
+        </a>
+        <div class="row reveal">
+          <div class="ic green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 9h18M3 9l2-5h14l2 5M5 9v11h14V9"/></svg></div>
+          <div><h5>Turistaê</h5><p data-pt="Site para uma agência de viagens.">Website for a travel agency.</p><div class="meta" data-pt="Site · Cliente">Website · Client</div></div>
+        </div>
+      </div>
+      <p class="more-note reveal"><span data-pt="Outros bots, sites e ferramentas estão no">Other bots, websites and tools are on</span> <a href="https://github.com/gabrielbelcastro" target="_blank" rel="noopener">GitHub ↗</a></p>
     </div>
-    <div class="toolrow reveal">
-      <span class="eyebrow" data-pt="Stack do ecossistema">Ecosystem stack</span>
-      <div class="toolcloud">
-        <span class="ttag hi">Claude Code</span><span class="ttag">JavaScript</span><span class="ttag">Node.js</span><span class="ttag">PHP 8</span><span class="ttag">Python</span><span class="ttag">PostgreSQL</span><span class="ttag">Docker</span><span class="ttag">Playwright</span><span class="ttag">DeepSeek</span><span class="ttag" data-pt="VPS própria">Own VPS</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- OTHERS -->
-<section class="sec" style="padding-top:0;">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div>
-        <span class="eyebrow" data-pt="Outros trabalhos">More work</span>
-        <h2 data-pt="Mais projetos">More projects</h2>
-        <p data-pt="Uma seleção entre as ferramentas, extensões e sites que entreguei.">A selection of the tools, extensions and websites I have shipped.</p>
-      </div>
-    </div>
-    <div class="grid2">
-
-      <div class="row reveal">
-        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v18M3 12h18"/></svg></div>
-        <div><h4>Criação de Contas</h4><p data-pt="Cria contas em massa com segurança, sem ninguém precisar fazer à mão.">Creates accounts in bulk, safely, with no manual work.</p><div class="meta" data-pt="IA · Operacional">AI · Operational</div></div>
-      </div>
-
-      <div class="row reveal">
-        <div class="ic green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v11H8l-4 4z"/></svg></div>
-        <div><h4>WhatsApp Milhas</h4><p data-pt="Lê fotos de bilhetes no WhatsApp com IA e organiza tudo numa planilha.">Reads ticket photos on WhatsApp with AI and organizes everything in a sheet.</p><div class="meta" data-pt="Bot · Em produção">Bot · In production</div></div>
-      </div>
-
-      <div class="row reveal">
-        <div class="ic sky"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M10 3v3a2 2 0 1 0 4 0V3h4v4h-3a2 2 0 1 0 0 4h3v4h-4v-3a2 2 0 1 0-4 0v3H6v-4h3a2 2 0 1 0 0-4H6V3z"/></svg></div>
-        <div><h4>Capturador Azul</h4><p data-pt="A mesma ideia do Capturador Smiles, feita para a TudoAzul.">The same idea as Capturador Smiles, built for TudoAzul.</p><div class="meta" data-pt="Extensão">Extension</div></div>
-      </div>
-
-      <div class="row reveal">
-        <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></div>
-        <div><h4>Transcrevedor de Documentos</h4><p data-pt="Extrai os dados de RG, CNH e passaporte automaticamente por IA.">Extracts data from IDs, driver's licenses and passports automatically with AI.</p><div class="meta" data-pt="Extensão · IA">Extension · AI</div></div>
-      </div>
-
-      <a class="row reveal" href="https://turistae.com.br" target="_blank" rel="noopener">
-        <div class="ic green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 9h18M3 9l2-5h14l2 5M5 9v11h14V9"/></svg></div>
-        <div><h4>Turistaê <span class="accent">↗</span></h4><p data-pt="Site para uma agência de viagens.">Website for a travel agency.</p><div class="meta" data-pt="Site · No ar">Website · Live</div></div>
-      </a>
-
-      <a class="row reveal" href="https://viajagencia.com.br" target="_blank" rel="noopener">
-        <div class="ic green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 9h18M3 9l2-5h14l2 5M5 9v11h14V9"/></svg></div>
-        <div><h4>Viajá Turismo <span class="accent">↗</span></h4><p data-pt="Site de viagens com cotação direta pelo WhatsApp.">Travel website with direct WhatsApp quoting.</p><div class="meta" data-pt="Site · No ar">Website · Live</div></div>
-      </a>
-
-    </div>
-    <p class="more-note reveal" data-pt="E mais 9 projetos entre bots, sites e ferramentas internas.">And 9 more projects across bots, websites and internal tools.</p>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="sec" style="background:var(--bg-2);">
+<section id="sobre" class="sec about-sec">
+  <span id="about" aria-hidden="true"></span><span id="numbers" aria-hidden="true"></span>
   <div class="wrap about">
     <div class="reveal">
       <span class="eyebrow" data-pt="Sobre">About</span>
-      <h2 data-pt="Construo com IA, não só uso.">I build with AI, not just use it.</h2>
-      <div class="facts">
-        <div class="fact"><span class="k" data-pt="Função">Role</span><span class="v" data-pt="Construtor de IA · fundador da Labs Aero">AI builder · founder of Labs Aero</span></div>
-        <div class="fact"><span class="k" data-pt="Local">Based in</span><span class="v">Rio de Janeiro, BR</span></div>
-        <div class="fact"><span class="k" data-pt="Aberto a">Open to</span><span class="v" data-pt="Remoto e freelance">Remote &amp; freelance</span></div>
-        <div class="fact"><span class="k" data-pt="Ferramentas">Tools</span><span class="v">Claude · n8n · Node · Python</span></div>
+      <h2 data-pt="Vim da operação. Por isso sei o que vale automatizar.">I came from operations. That's how I know what's worth automating.</h2>
+      <p data-pt="Sou do Rio de Janeiro. Passei cerca de dois anos num balcão de milhas de alto volume, emitindo passagens e treinando colegas até chegar a sênior. Ali aprendi onde o tempo se perde: no telefone, no extrato que não fecha, na mesma tela aberta cem vezes.">I'm from Rio de Janeiro. I spent about two years at a high-volume miles desk, issuing tickets and training colleagues on my way to a senior role. That's where I learned where time gets lost: on the phone, in statements that don't reconcile, in the same screen opened a hundred times.</p>
+      <p data-pt="Comecei a construir para o meu próprio trabalho e cortei pela metade o tempo de cada emissão. Disso vieram a Labs Aero e, depois, o ecossistema Domus, com a central de atendimento por voz.">I started building for my own job and cut the time per ticket in half. That led to Labs Aero and then to the Domus ecosystem, including the voice call center.</p>
+      <p data-pt="Trabalho como uma empresa de uma pessoa só, com a IA como time: Claude Code com MCPs (Playwright, Chrome, Supabase) para construir, testar e publicar, e testes automatizados antes de cada entrega.">I work like a one-person company with AI as my team: Claude Code with MCPs (Playwright, Chrome, Supabase) to build, test and ship, with automated tests before each release.</p>
+      <div class="toolrow">
+        <span class="eyebrow" data-pt="Com o que construo">What I build with</span>
+        <div class="toolcloud">
+          <span class="ttag hi">Claude Code</span><span class="ttag hi">Claude API · Vision</span><span class="ttag hi">ElevenLabs</span><span class="ttag">DeepSeek</span><span class="ttag">n8n</span><span class="ttag">Playwright</span><span class="ttag">Puppeteer</span><span class="ttag">Node.js</span><span class="ttag">Python</span><span class="ttag">PHP 8</span><span class="ttag">PostgreSQL</span><span class="ttag">Supabase</span><span class="ttag">Stripe</span><span class="ttag">Docker</span><span class="ttag" data-pt="Extensões do Chrome (MV3)">Chrome extensions (MV3)</span><span class="ttag" data-pt="VPS própria">Own VPS</span>
+        </div>
       </div>
     </div>
     <div class="reveal">
-      <p data-pt="Sou do Rio de Janeiro. Passei cerca de dois anos numa operação de alto volume: 600 emissões por mês e treinamento de uns 50 colegas até chegar a sênior. Por isso sei exatamente onde o tempo é perdido e o que dá pra automatizar.">I'm from Rio de Janeiro. I spent about two years in a high-volume operation: 600 tickets a month and training around 50 colleagues on my way to a senior role. So I know exactly where time is lost and what can be automated.</p>
-      <p data-pt="Então comecei a construir. Coloquei a IA no meu dia a dia, cortei o tempo de atendimento pela metade e fundei a Labs Aero. De março a novembro de 2026 entreguei 9.067 commits em 25 repositórios: painéis, extensões, automações e sites no ar, incluindo o ecossistema Domus.">So I started building. I put AI into my daily work, cut handling time in half, and founded Labs Aero. From March to November 2026 I shipped 9,067 commits across 25 repositories: dashboards, extensions, automations and live websites, including the Domus ecosystem.</p>
-      <p data-pt="Trabalho como uma empresa de uma pessoa só, e a IA é o meu time.">I work like a one-person company, and AI is my team.</p>
-    </div>
-  </div>
-</section>
-
-<!-- NUMBERS -->
-<section id="numbers" class="sec numbers">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div>
-        <span class="eyebrow" data-pt="Em números">In numbers</span>
-        <h2 data-pt="Os números">The numbers</h2>
-        <p data-pt="600 passagens por mês no balcão, 50 colegas treinados, 50% menos tempo por emissão e 9.067 commits em 25 repositórios no GitHub (mar a nov de 2026).">600 tickets a month at the desk, 50 colleagues trained, 50% less time per ticket, and 9,067 commits across 25 GitHub repositories (Mar to Nov 2026).</p>
+      <div class="facts">
+        <div class="fact"><span class="k" data-pt="Foco">Focus</span><span class="v" data-pt="IA de voz, agentes e automação">Voice AI, agents and automation</span></div>
+        <div class="fact"><span class="k" data-pt="Local">Based in</span><span class="v">Rio de Janeiro, BR</span></div>
+        <div class="fact"><span class="k" data-pt="Aberto a">Open to</span><span class="v" data-pt="Vagas remotas e freelance">Remote roles and freelance</span></div>
+        <div class="fact"><span class="k">GitHub</span><span class="v" data-pt="9.067 commits em 25 repositórios (mar–nov 2026)">9,067 commits, 25 repos (Mar–Nov 2026)</span></div>
       </div>
-    </div>
-    <div class="bigstat reveal">
-      <div class="bcell"><div class="num count" data-target="9067">0</div><div class="lbl" data-pt="Commits no total">Total commits</div></div>
-      <div class="bcell"><div class="num count" data-target="25">0</div><div class="lbl" data-pt="Repositórios">Repositories</div></div>
-      <div class="bcell"><div class="num count" data-target="5">0</div><div class="lbl" data-pt="Produtos no ar">Products live</div></div>
-      <div class="bcell"><div class="num count" data-target="50" data-prefix="~" data-suffix="%">0</div><div class="lbl" data-pt="Tempo economizado">Time saved</div></div>
-    </div>
-    <div class="toolrow reveal">
-      <span class="eyebrow" data-pt="Construído com">Built with</span>
-      <div class="toolcloud">
-        <span class="ttag hi">Claude</span><span class="ttag hi">Claude Code</span><span class="ttag">n8n</span><span class="ttag">Playwright</span><span class="ttag">Supabase</span><span class="ttag">Stripe</span><span class="ttag">Docker</span><span class="ttag">Node.js</span><span class="ttag">Python</span><span class="ttag">PHP</span><span class="ttag">PostgreSQL</span><span class="ttag">DeepSeek</span><span class="ttag">React</span><span class="ttag">Hostinger</span>
+      <div class="before">
+        <span class="eyebrow" data-pt="Na operação anterior, números aproximados">At my previous desk, approximate figures</span>
+        <div class="before-grid">
+          <div><div class="num">~600</div><div class="lbl" data-pt="emissões por mês">tickets a month</div></div>
+          <div><div class="num">~50</div><div class="lbl" data-pt="colegas treinados">colleagues trained</div></div>
+          <div><div class="num">~50%</div><div class="lbl" data-pt="menos tempo por emissão, com IA">less time per ticket, with AI</div></div>
+        </div>
       </div>
-      <p class="note" data-pt="Uso Claude Code com MCPs (Playwright, Chrome, Supabase) e automações próprias para construir e publicar os projetos.">I use Claude Code with MCPs (Playwright, Chrome, Supabase) and my own automations to build and ship the projects.</p>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="sec contact">
-  <div class="wrap">
-    <span class="eyebrow reveal" data-pt="Contato">Contact</span>
-    <h2 class="reveal" data-pt="Vamos conversar.">Let's talk.</h2>
-    <p class="reveal" data-pt="Aberto a vagas remotas e projetos freelance em IA e automação. Me manda uma mensagem.">Open to remote roles and freelance projects in AI and automation. Send me a message.</p>
-    <div class="contact-cta reveal">
-      <button class="btn btn-solid copy-btn" id="copyEmail"><span id="copyLabel" data-pt="Copiar e-mail">Copy email</span></button>
-      <a href="https://www.linkedin.com/in/gabrielbelcastro" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
-      <a href="https://github.com/gabrielbelcastro" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+<section id="contato" class="sec contact">
+  <span id="contact" aria-hidden="true"></span>
+  <div class="wrap contact-in">
+    <div class="reveal">
+      <span class="eyebrow" data-pt="Contato">Contact</span>
+      <h2 data-pt="Vamos conversar.">Let's talk.</h2>
+      <p data-pt="Aberto a vagas remotas e projetos em IA de voz, agentes e automação.">Open to remote roles and projects in voice AI, agents and automation.</p>
+    </div>
+    <div class="reveal">
+      <a class="mail" href="mailto:gabrielbelcastro.contatos@gmail.com">gabrielbelcastro.contatos@gmail.com</a>
+      <div class="contact-cta">
+        <button class="btn btn-accent" id="copyEmail" type="button"><span id="copyLabel" data-pt="Copiar e-mail">Copy email</span></button>
+        <a href="https://www.linkedin.com/in/gabrielbelcastro" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+        <a href="https://github.com/gabrielbelcastro" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="wrap foot-in">
     <span>© 2026 Gabriel Belcastro</span>
-    <span class="mono">gabrielbelcastro.contatos@gmail.com</span>
     <a href="https://labsaero.com" target="_blank" rel="noopener">labsaero.com ↗</a>
   </div>
 </footer>
@@ -438,64 +624,106 @@
 <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 <script>
   (function(){
-    // i18n
+    var EMAIL='gabrielbelcastro.contatos@gmail.com';
+
+    // i18n: elements with data-pt hold text only
     var els=document.querySelectorAll('[data-pt]');
     els.forEach(function(e){ e.setAttribute('data-en', e.textContent); });
-    var lang=localStorage.getItem('lang') || ((navigator.language||'en').toLowerCase().indexOf('pt')===0 ? 'pt':'en');
-    window.__lang=lang;
+    var lang=null;
+    try{ lang=localStorage.getItem('lang'); }catch(e){}
+    if(lang!=='pt' && lang!=='en') lang=((navigator.language||'en').toLowerCase().indexOf('pt')===0)?'pt':'en';
+    var ARIA={ play:{pt:'Tocar a ligação',en:'Play the call'}, pause:{pt:'Pausar',en:'Pause'}, seek:{pt:'Posição da ligação',en:'Call position'} };
+    var playBtn=document.getElementById('playBtn'), wave=document.getElementById('wave'), audio=document.getElementById('audio');
     function apply(l){
-      window.__lang=l;
+      lang=l;
       els.forEach(function(e){ e.textContent=(l==='pt')?e.getAttribute('data-pt'):e.getAttribute('data-en'); });
       document.documentElement.lang=(l==='pt')?'pt-BR':'en';
       document.querySelectorAll('[data-lang-btn]').forEach(function(b){
-        var en=b.querySelector('.l-en'), pt=b.querySelector('.l-pt');
-        if(en) en.style.color=(l==='en')?'var(--accent)':'var(--faint)';
-        if(pt) pt.style.color=(l==='pt')?'var(--accent)':'var(--faint)';
+        b.querySelector('.l-en').style.color=(l==='en')?'var(--accent)':'var(--faint)';
+        b.querySelector('.l-pt').style.color=(l==='pt')?'var(--accent)':'var(--faint)';
       });
+      if(playBtn) playBtn.setAttribute('aria-label', (audio && !audio.paused) ? ARIA.pause[l] : ARIA.play[l]);
+      if(wave) wave.setAttribute('aria-label', ARIA.seek[l]);
       try{ localStorage.setItem('lang',l); }catch(e){}
     }
-    document.querySelectorAll('[data-lang-btn]').forEach(function(b){ b.addEventListener('click',function(){ apply(window.__lang==='pt'?'en':'pt'); }); });
+    document.querySelectorAll('[data-lang-btn]').forEach(function(b){ b.addEventListener('click',function(){ apply(lang==='pt'?'en':'pt'); }); });
+
+    // waveform from the real call (RMS of 96 slices)
+    var PEAKS=[83,85,86,81,57,71,63,66,81,64,77,60,59,64,78,66,96,56,80,65,12,4,79,78,84,80,82,71,76,74,45,67,79,82,80,54,72,50,54,77,76,80,69,71,70,81,83,79,64,85,75,81,80,56,58,77,67,81,70,64,86,67,56,62,85,52,73,85,78,76,16,79,75,57,69,80,67,69,75,69,80,77,73,62,99,100,56,71,56,77,79,50,74,70,70,60];
+    var bars=[];
+    if(wave){
+      var mn=Math.min.apply(null,PEAKS), mx=Math.max.apply(null,PEAKS);
+      PEAKS.forEach(function(v){ var s=document.createElement('span'); var k=(v-mn)/(mx-mn); s.style.height=(14+86*Math.pow(k,1.6))+'%'; wave.appendChild(s); bars.push(s); });
+    }
+    var player=document.getElementById('player'), tCur=document.getElementById('tCur'), tDur=document.getElementById('tDur');
+    function fmt(s){ s=Math.max(0,Math.floor(s||0)); return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2); }
+    var DUR=102.3;
+    function dur(){ return (audio && isFinite(audio.duration) && audio.duration>0) ? audio.duration : DUR; }
+    function paint(){
+      var p=audio.currentTime/dur(), n=Math.round(p*bars.length);
+      for(var i=0;i<bars.length;i++) bars[i].classList.toggle('on', i<n);
+      tCur.textContent=fmt(audio.currentTime);
+      wave.setAttribute('aria-valuenow', String(Math.floor(audio.currentTime)));
+      wave.setAttribute('aria-valuetext', fmt(audio.currentTime)+' / '+fmt(dur()));
+    }
+    if(audio && playBtn){
+      audio.addEventListener('loadedmetadata', function(){ tDur.textContent=fmt(audio.duration); wave.setAttribute('aria-valuemax', String(Math.floor(audio.duration))); });
+      audio.addEventListener('timeupdate', paint);
+      audio.addEventListener('play', function(){ player.classList.add('playing'); playBtn.setAttribute('aria-label', ARIA.pause[lang]); });
+      audio.addEventListener('pause', function(){ player.classList.remove('playing'); playBtn.setAttribute('aria-label', ARIA.play[lang]); });
+      audio.addEventListener('ended', function(){ audio.currentTime=0; paint(); });
+      playBtn.addEventListener('click', function(){ if(audio.paused){ var pr=audio.play(); if(pr && pr.catch) pr.catch(function(){}); } else audio.pause(); });
+      function seekAt(x){ var r=wave.getBoundingClientRect(); var p=Math.min(1,Math.max(0,(x-r.left)/r.width)); audio.currentTime=p*dur(); paint(); }
+      wave.addEventListener('pointerdown', function(e){ seekAt(e.clientX); });
+      wave.addEventListener('keydown', function(e){
+        if(e.key==='ArrowRight'){ audio.currentTime=Math.min(dur(),audio.currentTime+5); paint(); e.preventDefault(); }
+        else if(e.key==='ArrowLeft'){ audio.currentTime=Math.max(0,audio.currentTime-5); paint(); e.preventDefault(); }
+        else if(e.key===' '||e.key==='Enter'){ playBtn.click(); e.preventDefault(); }
+      });
+    }
     apply(lang);
 
     // mobile menu
     var mb=document.getElementById('menuBtn'), mm=document.getElementById('mobileMenu');
     if(mb){ mb.addEventListener('click',function(){ var open=mm.style.display==='flex'; mm.style.display=open?'none':'flex'; mb.setAttribute('aria-expanded',String(!open)); }); }
-    document.querySelectorAll('.m-link').forEach(function(l){ l.addEventListener('click',function(){ mm.style.display='none'; mb.setAttribute('aria-expanded','false'); }); });
+    document.querySelectorAll('#mobileMenu a').forEach(function(l){ l.addEventListener('click',function(){ mm.style.display='none'; mb.setAttribute('aria-expanded','false'); }); });
 
-    // nav scroll shadow
+    // nav state
     var navEl=document.getElementById('nav');
-    function onScroll(){ if(navEl) navEl.classList.toggle('scrolled', window.scrollY>8); }
+    function onScroll(){ navEl.classList.toggle('scrolled', window.scrollY>8); }
     window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
-
-    // active section link
     var links=document.querySelectorAll('.nav-link');
-    var sio=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ links.forEach(function(l){ l.classList.toggle('active', l.dataset.sec===e.target.id); }); } }); },{threshold:.4});
-    ['work','about','numbers'].forEach(function(id){ var s=document.getElementById(id); if(s) sio.observe(s); });
+    if('IntersectionObserver' in window){
+      var sio=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ links.forEach(function(l){ l.classList.toggle('active', l.dataset.sec===e.target.id); }); } }); },{rootMargin:'-45% 0px -50% 0px'});
+      ['voz','projetos','sobre','contato'].forEach(function(id){ var s=document.getElementById(id); if(s) sio.observe(s); });
 
-    // reveal
-    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); },{threshold:.12, rootMargin:'0px 0px -40px 0px'});
-    var rev=document.querySelectorAll('.reveal'); rev.forEach(function(el){ io.observe(el); });
-    requestAnimationFrame(function(){ var vh=innerHeight; rev.forEach(function(el){ if(el.getBoundingClientRect().top<vh) el.classList.add('in'); }); });
-    setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(el){ el.classList.add('in'); }); },2500);
+      // reveal
+      var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); },{threshold:.08, rootMargin:'0px 0px -40px 0px'});
+      document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+    }
+    setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(el){ el.classList.add('in'); }); },1800);
 
-    // count up
+    // count up (numbers are already in the HTML; this only animates them)
     var reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-    function ease(t){ return 1-Math.pow(1-t,3); }
-    function run(el){ var t=parseFloat(el.dataset.target), pre=el.dataset.prefix||'', suf=el.dataset.suffix||'';
-      if(reduced){ el.textContent=pre+t+suf; return; }
-      var dur=1100, s=null;
-      function step(ts){ if(!s)s=ts; var p=Math.min((ts-s)/dur,1); el.textContent=pre+Math.round(ease(p)*t)+suf; if(p<1)requestAnimationFrame(step); }
+    function fmtN(n){ return (lang==='pt') ? n.toLocaleString('pt-BR') : n.toLocaleString('en-US'); }
+    function run(el){ var t=parseFloat(el.dataset.target);
+      if(reduced){ el.textContent=fmtN(t); return; }
+      var d=1100, s=null;
+      function step(ts){ if(!s)s=ts; var p=Math.min((ts-s)/d,1); el.textContent=fmtN(Math.round((1-Math.pow(1-p,3))*t)); if(p<1)requestAnimationFrame(step); }
       requestAnimationFrame(step);
     }
-    var cio=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ run(e.target); cio.unobserve(e.target); } }); },{threshold:.6});
-    document.querySelectorAll('.count').forEach(function(el){ cio.observe(el); });
+    document.querySelectorAll('.count').forEach(function(el){ el.textContent=fmtN(parseFloat(el.dataset.target)); });
+    if('IntersectionObserver' in window && !reduced){
+      var cio=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ run(e.target); cio.unobserve(e.target); } }); },{threshold:.6});
+      document.querySelectorAll('.count').forEach(function(el){ cio.observe(el); });
+    }
 
     // copy email
     var cb=document.getElementById('copyEmail'), cl=document.getElementById('copyLabel');
-    if(cb){ cb.addEventListener('click',function(){ var em='gabrielbelcastro.contatos@gmail.com';
-      function done(){ cl.textContent=(window.__lang==='pt'?'Copiado ✓':'Copied ✓'); setTimeout(function(){ cl.textContent=(window.__lang==='pt'?'Copiar e-mail':'Copy email'); },1600); }
-      if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(em).then(done).catch(fb); } else fb();
-      function fb(){ try{ var ta=document.createElement('textarea'); ta.value=em; ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); done(); }catch(e){ location.href='mailto:'+em; } }
+    if(cb){ cb.addEventListener('click',function(){
+      function done(){ cl.textContent=(lang==='pt'?'Copiado ✓':'Copied ✓'); setTimeout(function(){ cl.textContent=(lang==='pt'?'Copiar e-mail':'Copy email'); },1600); }
+      function fb(){ try{ var ta=document.createElement('textarea'); ta.value=EMAIL; ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); done(); }catch(e){ location.href='mailto:'+EMAIL; } }
+      if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(EMAIL).then(done).catch(fb); } else fb();
     }); }
   })();
 </script>

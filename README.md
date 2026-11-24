@@ -1,22 +1,24 @@
 # Portfolio: Gabriel Belcastro
 
-AI-Native Operator & Automation Builder. Founder of **Labs Aero**, a suite of AI tools for the miles industry.
+Voice AI, agents and automation. Self-contained static pages, no build step, vanilla JS, PT/EN toggle.
 
-Single self-contained `index.html` (no build step, no frameworks). Dark "Engineering Ledger" design, Geist + Geist Mono, vanilla JS.
+**Live:** https://portfolio.labsaero.com/
 
-**Live:** https://gabrielbelcastro.github.io/portfolio
+## Pages
+- `index.html`: home. Opens with the voice AI work: a player with a test call by Clara, the Domus voice assistant (`audio/clara-ligacao-de-teste.mp3`, 1:42, fictitious data, simulated agent), how the call center works and the full transcript. Then the Domus ecosystem, the Labs Aero tools, more projects, about and contact.
+- `miles-terminal.html`: case page for Miles Terminal (screenshots with no data, modules, stack). The terminal itself needs an authorized Google login.
+- `capturador-azul.html`: case page for Capturador Azul, the Domus ticketing team's Chrome extension.
+- `og.jpg`: social preview image (1200x630).
 
-## What's inside
-- **Labs Aero** ecosystem: Miles Terminal, Capturador Smiles (SaaS), Capturador Azul, Transcrevedor de Documentos
-- CSS-rendered product mockups for the Chrome extensions and n8n flows
-- **Domus** ecosystem: a production dashboard for a miles agency plus 13 surrounding projects (14 private repos, 8,278 commits, Aug to Nov 2026)
-- 15+ shipped projects (tools, extensions, client sites, bots, apps)
-- **By the numbers**: commit data aggregated from 25 GitHub repos (9,067 commits, Mar to Nov 2026), languages, and the MCPs/skills used to build everything
+## Links out
+- Domus call center (voice agent): https://domuspi.com.br/central-de-atendimento.html
+- Domus dashboard demo (fictitious data): https://domuspi.com.br/demonstracao.html
+- Domus website: https://domuspi.com.br/servicos.html
+- Capturador Smiles on the Chrome Web Store, labsaero.com, viajagencia.com.br, LinkedIn, GitHub
 
-## Stack used across projects
-Claude (Anthropic) · Claude Vision · DeepSeek · n8n · Playwright · Puppeteer · Supabase · Stripe · Docker Swarm · Hostinger · OCR.space · Tesseract · WAHA · Node.js · Python · React
+## i18n rule
+Elements with `data-pt` hold text only (the script swaps `textContent`), never child elements.
 
 ## Contact
 - Email: gabrielbelcastro.contatos@gmail.com
 - LinkedIn: https://www.linkedin.com/in/gabrielbelcastro
-- Labs Aero: https://labsaero.com
